@@ -1,6 +1,7 @@
 # See https://www.dartlang.org/tools/private-files.html
 
 # Files and directories created by pub
+
 .buildlog
 .packages
 .project
@@ -18,6 +19,11 @@ build/
 *.js.deps
 *.js.map
 *.info.json
+
+# PHPStorm
+.idea
+
+
 
 # Directory created by dartdoc
 doc/api/

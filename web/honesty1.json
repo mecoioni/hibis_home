@@ -1,0 +1,51 @@
+{
+  "start-question":"Do you think you are a basically honest person?",   
+  "prefix":"Have you ever...?",
+  "per_page":3,  
+  "total":10,
+  "questions":
+  [ 
+    "used unlicensed software",
+    "illegally copied or downloaded music",
+    "illegally downloaded films",
+    "taken credit for your colleagues work",
+    "illegally obtained confidential information",
+    "claimed reimbursement for private expenses",
+    "paid a bribe",
+    "taken a bribe",
+    "taken more than your fair share of the proceeds of a sale",
+    "purchased pirate copy products from street vendors",    
+    "taken items of office stationery or equipment to use at home",
+    "manipulated business partners to achieve your own ambitions",
+    "deliberately exceeded the speed limit",
+    "told a 'white lie' about your qualifications",
+    "forged a signature on an official document",
+    "claimed sick leave to extend your vacation",
+    "omitted income from your tax return",
+    "claimed tax deductions you were not entitled to",
+    "brought items through customs which you should have declared",
+    "exaggerated your travel expenses",
+    "worked illegally for cash",
+    "taken advantage of a business partner",
+    "hidden your wealth or income to qualify for subsidies",
+    "paid cash to a plumber, builder, tradesman or other contractor to avoid paying tax…",
+    "channeled company purchases or services through another company in which you or your family members have a personal interest",
+    "ordered unnecessarily expensive items to get more bonus points",
+    "knowingly inflated a private insurance claim",
+    "avoided paying the bus or train fare",
+    "taken and not declared a gift from a supplier or customer",
+    "claimed a benefit you know you really shouldn't have",
+    "cheated on a test",
+    "used company envelopes and/or stamps for private correspondence",
+    "used the company photocopy machine for private purposes",
+    "stolen anything"
+  ],
+  "feedback":  
+  {
+    "100":{"title":"Aggressive Risk Taker", "description":"You could be a bit of a risk taker who likes constant excitement and challenge in your life. You really don't mind bending the rules when you have the motivation, opportunity and can see that you are not going to get caught. It is probably difficult for your employer (or future employer) to control you.<br /><br /><strong>\"Typical\" job functions can for an aggressive risk taker include:</strong><ul><li>Chief Executive</li><li>Politician</li><li>Dictator</li><li>Career fraudster</li><li>Hacker</li></ul>"},
+    "50":{"title":"Risk Taker", "description":"You like some excitement in your life and don’t mind bending a few rules when you have the motivation, opportunity and can see that you are not going to get caught.<br /><br /><strong>Typical job functions for a risk taker include:</strong><ul><li>Management Consultant</li><li>Auditor</li><li>IT Consultant</li><li>Policeman</li><li>Salesman</li><li>Financial Markets Trader</li></ul>"},
+    "-50":{"title":"Average Risk Taker", "description":"You do not like to bend the rules too much. However you can be persuaded to cheat a little when you have the motivation, opportunity and can see that you are not going to get caught. You are probably a nice person and a good, loyal friend.<br /><br /><strong>Typical job functions for average risk takers include:</strong><ul><li>Human Resources</li><li>Operations</li><li>Nurse</li><li>Teacher</li><li>Accounting</li><li>Waitor/Waitress</li><li>Corporate Responsibility</li><li>Compliance Officer</li></ul>"},
+    "-130":{"title":"Saint", "description":"<strong>You are either:</strong><ul><li>a saint and we are awed to be visited by you as these occasions are rare...or would you have answered yes, if we asked some other questions?</li></ul><div id=\"honesty-suggestions\"><label for=\"honesty-suggestions-textarea\">Let us know:</label><textarea id=\"honesty-suggestions-textarea\"></textarea><span class=\"button centered\" id=\"honesty-suggestions-button\">send</span></div></li><li>...or you did not answer honestly, in which case please go <strong><a href=\"rulebending.html\">back</a></strong> and re-do the questions</li>"}     
+  },
+  "finally":"Thank you for participating in this anonymous survey. While, there are very few pathological fraudsters, there are also only a few of us who can really claim to be 100% percent honest.. But don’t feel too down about this. Being <strong>aware</strong> of our own capacity to cheat is in fact a strength. Awareness helps us to control our behaviour, <strong>and</strong> to spot fraud and corruption happening around us..."
+}
