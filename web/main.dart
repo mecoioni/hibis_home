@@ -29,9 +29,9 @@ void runFullSlideshow()
   setElementVisibility(querySelector("#slideshow-text-2"), const Duration(seconds:4), const Duration(seconds:2));   
   
   /// 3rd text ("open your eyes")
-  setElementVisibility(querySelector("#slideshow-text-3"), const Duration(seconds:7), const Duration(seconds:4));
+  setElementVisibility(querySelector("#slideshow-text-3"), const Duration(seconds:7), const Duration(seconds:12));
   ImageElement eyes = querySelector("#slideshow-eyes"); 
-  setElementVisibility(eyes, const Duration(seconds:7), const Duration(seconds:4));
+  setElementVisibility(eyes, const Duration(seconds:7), const Duration(seconds:12));
   
   new Timer(const Duration(seconds:7), () => eyes.src = img["eye_center"].src);
   new Timer(const Duration(seconds:8), () => eyes.src = img["eye_left"].src);
@@ -40,12 +40,11 @@ void runFullSlideshow()
   new Timer(const Duration(seconds:11), () => eyes.src = img["eye_closed"].src);
   new Timer(const Duration(milliseconds:11250), () => eyes.src = img["eye_center"].src);
   
-  /// 4th text ("get aware...")
+  /// 4th text ("Find, interpret...")
   setElementVisibility(querySelector("#slideshow-text-4"), const Duration(milliseconds:11750), const Duration(seconds:7));
   setElementScale(querySelector("#slideshow-text-4-1"), const Duration(seconds:13), const Duration(seconds:6));
   setElementScale(querySelector("#slideshow-text-4-2"), const Duration(seconds:14), const Duration(seconds:5));
-  setElementScale(querySelector("#slideshow-text-4-3"), const Duration(seconds:15), const Duration(seconds:4));   
-  setElementScale(querySelector("#slideshow-text-4-4"), const Duration(seconds:16), const Duration(seconds:3), onDone:runFullSlideshow);
+  setElementScale(querySelector("#slideshow-text-4-3"), const Duration(seconds:15), const Duration(seconds:4), onDone: runFullSlideshow);
 }
 
 void setElementVisibility(Element e, Duration delay, Duration duration, {Function onDone : null})

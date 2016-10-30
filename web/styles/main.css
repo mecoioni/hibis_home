@@ -18,6 +18,9 @@ p, ul { font-size:0.9rem; }
 
 .active { font-weight:550; color:#00a9e5; }
 
+.text-grey { color:#888; }
+.text-blue { color:#00a9e5; }
+
 .centered { display:block; margin-left:auto; margin-right:auto; }
 
 .vertical-aligned { display:-webkit-box; display:-webkit-flex; display:-moz-box; display:-ms-flexbox; display:flex; -webkit-flex-align:center; -ms-flex-align:center; -webkit-align-items:center; align-items:center; }
