@@ -18,8 +18,8 @@ class Page
       if (id != null && querySelector("#$id") != null) querySelector("#$id").classes.add("active");
 
       /// external links are not allowed in html import, update the academy top link here instead
-      (querySelector("#academy") as AnchorElement).href = "http://academy.hibis.com";
-      (querySelector("#academy_small") as AnchorElement).href = "http://academy.hibis.com";
+      (querySelector("#academy") as AnchorElement).href = "http://fraudacademy.hibis.com";
+      (querySelector("#academy_small") as AnchorElement).href = "http://fraudacademy.hibis.com";
 
 
       /// micro nav
