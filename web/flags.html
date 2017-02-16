@@ -5,7 +5,7 @@
   is governed by a BSD-style license that can be found in the LICENSE file.
 -->
 
-<html style="background-color:#f5f5f5">
+<html>
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,18 +16,21 @@
 <link rel="stylesheet" href="styles/main.css">
 </head>
 
-<body class="row unresolved">      
+<body class="unresolved">
+<div class="row full-width">
   <div class="columns">    
     <div class="row" id="header"></div>
     <div class="row">
       <a href="flags.html">
-        <div class="small-11 small-centered columns" id="page-header-blue">
-          <h2>The red flag game</h2>        
+        <div class="columns">
+          <div id="page-header-blue">
+            <h2>The red flag game</h2>
+          </div>
         </div>
       </a>
     </div>
     <div class="row">
-      <div class="small-11 small-centered columns" id="flags-container">
+      <div class="columns" id="flags-container">
         <div class="row">
           <div class="large-6 large-push-6 columns">
             <div id="flags-canvas"></div>
@@ -41,7 +44,7 @@
               <div class="small-6 medium-3 columns" style="margin-bottom:1.5em;">
                 <div id="stopwatch-container"></div>            
               </div>              
-              <ul class="small-11 large-12 columns end" id="answers"></ul>
+              <ul class="columns end" id="answers"></ul>
             </div>        
           </div>
         </div>
@@ -49,8 +52,9 @@
     </div>                 
     <div class="row" id="footer"></div>      
   </div>
-  <script type="application/dart" src="flags.dart"></script>
-  <script data-pub-inline src="packages/browser/dart.js"></script>
+</div>
+<script type="application/dart" src="flags.dart"></script>
+<script data-pub-inline src="packages/browser/dart.js"></script>
 </body>
 </html>
 

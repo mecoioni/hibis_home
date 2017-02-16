@@ -5,7 +5,7 @@
 
 <!DOCTYPE html>
 
-<html style="background-color:#f5f5f5">
+<html>
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,16 +17,19 @@
 <link rel="stylesheet" href="styles/main.css">
 </head>
 
-<body class="row unresolved">      
+<body class="unresolved">
+<div class="row full-width">
   <div class="columns">    
     <div class="row" id="header"></div>
     <div class="row">
-      <div class="small-11 small-centered columns" id="page-header">
-        <h2>Contact</h2>        
+      <div class="columns">
+        <div id="page-header">
+          <h2>Contact</h2>
+        </div>
       </div>
     </div>
     <div class="row"> <!-- small screens -->
-      <div class="small-11 small-centered columns" id="small-contact-info-container">
+      <div class="columns" id="small-contact-info-container">
         <div class="tooltip" id="oslo">                 
           <div class="body" id="body-oslo" style="display:block;">                   
             <h3>Oslo</h3>
@@ -118,7 +121,7 @@
         </div>
       </div> <!-- /small screens -->
     
-      <div class="small-11 small-centered columns" id="map-container"> <!-- large screens -->      
+      <div class="columns" id="map-container"> <!-- large screens -->
         <div class="tooltip" id="oslo">
           <img src="gfx/node.png" class="node" id="node-oslo" />        
           <div class="body" id="body-oslo">
@@ -241,7 +244,8 @@
     </div>                   
     <div class="row" id="footer"></div>      
   </div>
-  <script type="application/dart" src="contact.dart"></script>
-  <script data-pub-inline src="packages/browser/dart.js"></script>
+</div>
+<script type="application/dart" src="contact.dart"></script>
+<script data-pub-inline src="packages/browser/dart.js"></script>
 </body>
 </html>

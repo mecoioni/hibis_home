@@ -5,7 +5,7 @@
 
 <!DOCTYPE html>
 
-<html style="background-color:#f5f5f5">
+<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,18 +17,21 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 
-<body class="row unresolved">
-<div class="columns">
+<body class="unresolved">
+<div class="row full-width">
+    <div class="columns">
     <div class="row" id="header"></div>
      
     <div class="row">
-        <div class="small-11 small-centered columns" id="page-header">
-            <h2>What we do</h2>
+        <div class="columns">
+            <div id="page-header">
+                <h2>What we do</h2>
+            </div>
         </div>
     </div>
     
     <div class="row">
-        <div class="small-11 small-centered columns">    
+        <div class="columns">
             <p>
                 Fraud and corruption happens all the time and is arguably one of the greatest
                 unmanaged costs in organisations and society today. Yet most management
@@ -49,10 +52,8 @@
             <p><strong>Assessing</strong> and <strong>measuring</strong> the <strong>effectiveness</strong>, strengths and weaknesses of existing anti-fraud and corruption programmes"</p>
         </div>        
     </div>
-      
-    <!-- more -->
     <div class="row">
-        <div class="small-11 small-centered columns" id="more">
+        <div class="columns">
           
             <h3>We investigate fraud and corruption responsibly</h3>
             <p>
@@ -151,16 +152,16 @@
         </div>
     </div>
       
-    <!-- "read more" togglebutton -->
+    <!-- "read more" togglebutton
     <div class="row">
         <div class="columns" style="position:relative; z-index:10">
             <div class="button-white centered" style="width:150px;" id="more-button">Read more +</div>
-            <hr />
+            <!--<hr />
         </div>      
     </div>
+      -->
       
-      
-    <!-- pad buttons -->
+    <!-- pad buttons
     <div id="pad-buttons">
         <div class="row">
             <div class="medium-6 columns">
@@ -192,142 +193,146 @@
             </div>
         </div>                  
     </div>
+    -->
     <div class="row" id="footer"></div>
 </div>
-    
-<!-- popups -->
-<div class="popup-background" id="popup-fraud">
-    <div class="popup-body row">
-        <div class="popup-header vertical-aligned">
-            <h2 class="small-10 columns">We look for fraud and always find it!</h2>                                
-            <div class="small-2"><img src="gfx/cross_black.png" style="width:25px;" id="fraud-close" /></div>
-        </div>
-        <div class="popup-content small-12 columns">
-            <p>
-                There is plenty of fraud and corruption around that needs to be found
-                (preferably in the early stages) and stopped. Usually fraudulent and corrupt
-                activities are cloaked in legitimacy, and finding the truth requires professional
-                scepticism, experience and effort. Our proven methods include:
-            </p>            
-            <ul>
-                <li>Delving into the details and performing structured analysis on transactions, data and documents to find the red flags</li>
-                <li>
-                    Convening “thinking like a thief” sessions (an approach invented in the
-                    1980’s by Martin Samociuk, Hibis’ founder) to anticipate how the
-                    fraudsters’ mind works and build a profile of the types of frauds that are
-                    occurring or likely to occur
-                </li>
-                <li>
-                    Finding behavioural red flags by performing holistic desktop investigative
-                    research and analysis of organisations, business partners, suppliers,
-                    customers and key individuals. All with a special focus on opportunities,
-                    motives and how people rationalize dishonest or unethical behaviour
-                </li>
-            </ul>
-            <p>
-                If not detected early, fraud and corruption will spread. Eventually, the problem
-                will be discovered when it becomes too large to ignore, or is reported by
-                whistle-blowers, or both. But why wait for the whistle-blower when you can use
-                fraud detective techniques and uncover where early stage fraud and corruption
-                is developing now? It’s better to stay ahead of the game!
-            </p>
-            <div class="row">
-                <div class="large-4 large-offset-4 medium-6 medium-offset-3 columns end">
-                    <img src="gfx/logo_b4.png" alt="b4-logo" />
+</div>
+
+<!--
+<div class="row">
+    <div class="popup-background" id="popup-fraud">
+        <div class="popup-body row">
+            <div class="popup-header vertical-aligned">
+                <h2 class="small-10 columns">We look for fraud and always find it!</h2>
+                <div class="small-2"><img src="gfx/cross_black.png" style="width:25px;" id="fraud-close" /></div>
+            </div>
+            <div class="popup-content small-12 columns">
+                <p>
+                    There is plenty of fraud and corruption around that needs to be found
+                    (preferably in the early stages) and stopped. Usually fraudulent and corrupt
+                    activities are cloaked in legitimacy, and finding the truth requires professional
+                    scepticism, experience and effort. Our proven methods include:
+                </p>
+                <ul>
+                    <li>Delving into the details and performing structured analysis on transactions, data and documents to find the red flags</li>
+                    <li>
+                        Convening “thinking like a thief” sessions (an approach invented in the
+                        1980’s by Martin Samociuk, Hibis’ founder) to anticipate how the
+                        fraudsters’ mind works and build a profile of the types of frauds that are
+                        occurring or likely to occur
+                    </li>
+                    <li>
+                        Finding behavioural red flags by performing holistic desktop investigative
+                        research and analysis of organisations, business partners, suppliers,
+                        customers and key individuals. All with a special focus on opportunities,
+                        motives and how people rationalize dishonest or unethical behaviour
+                    </li>
+                </ul>
+                <p>
+                    If not detected early, fraud and corruption will spread. Eventually, the problem
+                    will be discovered when it becomes too large to ignore, or is reported by
+                    whistle-blowers, or both. But why wait for the whistle-blower when you can use
+                    fraud detective techniques and uncover where early stage fraud and corruption
+                    is developing now? It’s better to stay ahead of the game!
+                </p>
+                <div class="row">
+                    <div class="large-4 large-offset-4 medium-6 medium-offset-3 columns end">
+                        <img src="gfx/logo_b4.png" alt="b4-logo" />
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-      
-<div class="popup-background" id="popup-knowledge">
-    <div class="popup-body row">
-        <div class="popup-header vertical-aligned">
-            <h2 class="small-10 columns">We raise awareness, share knowledge and transfer skills</h2>                                
-            <div class="small-2"><img src="gfx/cross_black.png" id="knowledge-close" /></div>
+
+    <div class="popup-background" id="popup-knowledge">
+        <div class="popup-body row">
+            <div class="popup-header vertical-aligned">
+                <h2 class="small-10 columns">We raise awareness, share knowledge and transfer skills</h2>
+                <div class="small-2"><img src="gfx/cross_black.png" id="knowledge-close" /></div>
+            </div>
+            <div class="popup-content small-12 columns">
+                <p>
+                    We probably will never totally eradicate fraud and corruption. But by raising
+                    awareness and managing the risks we can control the cost and make corrupt
+                    behaviour less acceptable. Surprisingly, much fraud and corruption involves
+                    normal, good people such as valuable and trusted employees or business
+                    partners. Awareness is a powerful tool to help good people avoid bad mistakes
+                    they will later regret, and to show them how to protect the organisation against
+                    career fraudsters. As Nelson Mandela said, education is one of the most
+                    powerful ways to change the world. We have developed courses and techniques
+                    to bridge the skills gap and constantly look for innovative new ways to raise the
+                    awareness, spread knowledge and bring people together in the fight of
+                    corruption and fraud. Examples (details can be found in our
+                    <strong><a href="http://fraudacademy.hibis.com" target="_blank">Fraud Academy</a></strong> page) include:
+                </p>
+                <ul>
+                    <li>Practical open courses and workshops (including our “think like a thief methodology” and “fraud detective school”)</li>
+                    <li>Accredited management courses</li>
+                    <li>On the job-training, in-house workshops and clinics</li>
+                    <li>Multimedia based training delivered over the internet (or intranet)</li>
+                    <li>Experiential learning, including drama, scenarios, live simulations, “corruption-theatre” and films</li>
+                    <li>Publications and books</li>
+                </ul>
+            </div>
         </div>
-        <div class="popup-content small-12 columns">
-            <p>
-                We probably will never totally eradicate fraud and corruption. But by raising
-                awareness and managing the risks we can control the cost and make corrupt
-                behaviour less acceptable. Surprisingly, much fraud and corruption involves
-                normal, good people such as valuable and trusted employees or business
-                partners. Awareness is a powerful tool to help good people avoid bad mistakes
-                they will later regret, and to show them how to protect the organisation against
-                career fraudsters. As Nelson Mandela said, education is one of the most
-                powerful ways to change the world. We have developed courses and techniques
-                to bridge the skills gap and constantly look for innovative new ways to raise the
-                awareness, spread knowledge and bring people together in the fight of
-                corruption and fraud. Examples (details can be found in our
-                <strong><a href="http://fraudacademy.hibis.com" target="_blank">Fraud Academy</a></strong> page) include:
-            </p>           
-            <ul>
-                <li>Practical open courses and workshops (including our “think like a thief methodology” and “fraud detective school”)</li>
-                <li>Accredited management courses</li>
-                <li>On the job-training, in-house workshops and clinics</li>
-                <li>Multimedia based training delivered over the internet (or intranet)</li>
-                <li>Experiential learning, including drama, scenarios, live simulations, “corruption-theatre” and films</li>
-                <li>Publications and books</li>
-            </ul>                     
+    </div>
+
+    <div class="popup-background" id="popup-corruption">
+        <div class="popup-body row">
+            <div class="popup-header vertical-aligned">
+                <h2 class="small-10 columns">We investigate fraud and corruption <strong>responsibly</strong></h2>
+                <div class="small-2"><img src="gfx/cross_black.png" id="corruption-close" /></div>
+            </div>
+            <div class="popup-content small-12 columns">
+                <p>
+                    We are a small group of investigation experts who work quickly and effectively.
+                    We have a track record of solving our client’s problems efficiently and with
+                    compassion. We believe in the beauty of small investigations that win back
+                    value. It is not necessary to chase every suspicion when finding and fixing the
+                    “whys” and the “hows” resolves the problem.
+                </p>
+                <p>
+                    Of course from time to time exceptional situations occur. When an organisation
+                    needs to prepare legal actions to recover major assets or save a business, a
+                    deep investigation may be required. We manage investigations, large or small,
+                    in a controlled way avoiding unnecessary expenditure and keeping the client in
+                    the driver’s seat.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-background" id="popup-effectiveness">
+        <div class="popup-body row">
+            <div class="popup-header vertical-aligned">
+                <h2 class="small-10 columns">We assess effectiveness of existing anti-fraud and corruption programs</h2>
+                <div class="small-2"><img src="gfx/cross_black.png" id="effectiveness-close" /></div>
+            </div>
+            <div class="popup-content small-12 columns">
+                <p>
+                    The burden of external regulation, designed to protect the public and punish
+                    corporate offenders is increasing. This absorbs management attention and
+                    leaves less room for more practical programs designed to protect the
+                    organisation. Management can fall into the trap of accepting bureaucratic
+                    solutions that appear to fulfill regulatory requirements, but which do not
+                    effectively address the issue of fraudulent and corrupt behavior. Compliance
+                    programs based on checklists are unlikely to be effective!
+                </p>
+                <p>
+                    We are able to measure the impact and effectiveness of your existing anti-fraud
+                    and corruption activities, identifying gaps and potential improvements that will
+                    bring down the cost of fraud and corruption and strengthen the ethical culture.
+                </p>
+                <p>
+                    Our holistic framework and assessment tool brings together years of practical
+                    experience with a distillation of the most essential knowledge from widely used
+                    existing frameworks.
+                </p>
+            </div>
         </div>
     </div>
 </div>
-      
-<div class="popup-background" id="popup-corruption">
-    <div class="popup-body row">
-        <div class="popup-header vertical-aligned">
-            <h2 class="small-10 columns">We investigate fraud and corruption <strong>responsibly</strong></h2>                                
-            <div class="small-2"><img src="gfx/cross_black.png" id="corruption-close" /></div>
-        </div>
-        <div class="popup-content small-12 columns">
-            <p>
-                We are a small group of investigation experts who work quickly and effectively.
-                We have a track record of solving our client’s problems efficiently and with
-                compassion. We believe in the beauty of small investigations that win back
-                value. It is not necessary to chase every suspicion when finding and fixing the
-                “whys” and the “hows” resolves the problem.
-            </p>
-            <p>
-                Of course from time to time exceptional situations occur. When an organisation
-                needs to prepare legal actions to recover major assets or save a business, a
-                deep investigation may be required. We manage investigations, large or small,
-                in a controlled way avoiding unnecessary expenditure and keeping the client in
-                the driver’s seat.
-            </p>           
-        </div>
-    </div>
-</div>
-      
-<div class="popup-background" id="popup-effectiveness">
-    <div class="popup-body row">
-        <div class="popup-header vertical-aligned">
-            <h2 class="small-10 columns">We assess effectiveness of existing anti-fraud and corruption programs</h2>                                
-            <div class="small-2"><img src="gfx/cross_black.png" id="effectiveness-close" /></div>
-        </div>
-        <div class="popup-content small-12 columns">
-            <p>
-                The burden of external regulation, designed to protect the public and punish
-                corporate offenders is increasing. This absorbs management attention and
-                leaves less room for more practical programs designed to protect the
-                organisation. Management can fall into the trap of accepting bureaucratic
-                solutions that appear to fulfill regulatory requirements, but which do not
-                effectively address the issue of fraudulent and corrupt behavior. Compliance
-                programs based on checklists are unlikely to be effective!
-            </p>
-            <p>
-                We are able to measure the impact and effectiveness of your existing anti-fraud
-                and corruption activities, identifying gaps and potential improvements that will
-                bring down the cost of fraud and corruption and strengthen the ethical culture.
-            </p>
-            <p>
-                Our holistic framework and assessment tool brings together years of practical
-                experience with a distillation of the most essential knowledge from widely used
-                existing frameworks.
-            </p>
-        </div>
-    </div>
-</div>
-    
+-->
 <script type="application/dart" src="what_we_do.dart"></script>
 <script data-pub-inline src="packages/browser/dart.js"></script>
 </body>

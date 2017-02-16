@@ -5,7 +5,7 @@
 
 <!DOCTYPE html>
 
-<html style="background-color:#f5f5f5">
+<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,19 +17,22 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 
-<body class="row unresolved">      
-<div class="columns">
-    <div class="row" id="header"></div>
-  
-    <div class="row">
-        <div class="small-11 small-centered columns" id="page-header">
-            <h2>Who we are</h2>
+<body class="unresolved">
+<div class="row full-width">
+    <div class="columns">
+        <div class="row" id="header"></div>
+
+        <div class="row">
+            <div class="columns">
+                <div id="page-header">
+                    <h2>Who we are</h2>
+                </div>
+            </div>
         </div>
-    </div>  
   
     <div class="row">
-        <div class="small-11 small-centered columns">
-            <div class="row fade" id="page-1">
+        <div class="columns">
+            <div class="row fade">
                 <div class="large-3 medium-6 small-12 columns">
                     <div class="card-container">
                         <div class="card-front">
@@ -136,9 +139,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-               
-            <div class="row fade" id="page-2" style="display:none;">
                 <div class="large-3 medium-6 small-12 columns">
                     <div class="card-container">
                         <div class="card-front">
@@ -164,32 +164,6 @@
                         </div>
                     </div>
                 </div>
-                <!--
-          <div class="large-3 medium-6 small-12 columns">
-            <div class="card-container">
-              <div class="card-front">
-                <img src="gfx/profile_ellinor.jpg" class="" />
-                <h1>Ellinor<br />Prawitz</h1>
-                <img src="gfx/cross.png" />            
-              </div>
-              <div class="card-back">
-                <img src="gfx/profile_ellinor.jpg" class="" />
-                <h2><a href="mailto:ellinor.prawitz@hibis.com">ellinor.prawitz@hibis.com</a></h2>
-                <h2>+46 737 309488</h2>                
-                <hr />
-                <p>
-                  Ellinor has an investigative nature and an eye for details that lead to an interest 
-                  in societal matters and a bachelor degree in politics and economics from Uppsala 
-                  University. Her curiosity has always been her motivation and the words “why” 
-                  and “how” are two of the most frequent in her vocabulary. A combination of 
-                  these qualities helped her find the Hibis colleagues in cyberspace and their work 
-                  immediately awoke her interest.          
-                </p>
-              </div>
-            </div>             
-          </div>
-          -->
-
                 <div class="large-3 medium-6 small-12 columns">
                     <div class="card-container">
                         <div class="card-front">
@@ -215,6 +189,7 @@
                     </div>
                 </div>
 
+                <!--
                 <div class="large-3 medium-6 small-12 columns end">
                     <div class="card-container">
                         <div class="card-front">
@@ -241,6 +216,7 @@
                         </div>
                     </div>
                 </div>
+                -->
                 <div class="large-3 medium-6 small-12 columns end">
                     <div class="card-container">
                         <div class="card-front">
@@ -268,17 +244,20 @@
                     </div>
                 </div>
             </div>
-        
+
+            <!--
             <div class="row">
                 <div class="columns">
                     <div class="button-white centered" id="more-button" style="width:120px;">More +</div>
                 </div>
             </div>
+            -->
       
         </div>
     </div>    
     
     <div class="row" id="footer"></div>      
+</div>
 </div>
 <script type="application/dart" src="who_we_are.dart"></script>
 <script data-pub-inline src="packages/browser/dart.js"></script>
