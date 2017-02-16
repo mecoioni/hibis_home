@@ -12,10 +12,11 @@ void main()
 {
   Page.init("what_we_do");
     
-  querySelector("#more-button").onClick.listen(toggleExtraContent);
+  //querySelector("#more-button").onClick.listen(toggleExtraContent);
   
   /// pads
-  querySelector("#fraud-button").onClick.listen((_) => showPopup("fraud"));  
+  /*
+  querySelector("#fraud-button").onClick.listen((_) => showPopup("fraud"));
   querySelector("#knowledge-button").onClick.listen((_) => showPopup("knowledge"));
   querySelector("#corruption-button").onClick.listen((_) => showPopup("corruption"));
   querySelector("#effectiveness-button").onClick.listen((_) => showPopup("effectiveness"));
@@ -23,9 +24,11 @@ void main()
   querySelector("#fraud-close").onClick.listen((_) => hidePopup("fraud"));
   querySelector("#knowledge-close").onClick.listen((_) => hidePopup("knowledge"));
   querySelector("#corruption-close").onClick.listen((_) => hidePopup("corruption"));
-  querySelector("#effectiveness-close").onClick.listen((_) => hidePopup("effectiveness")); 
+  querySelector("#effectiveness-close").onClick.listen((_) => hidePopup("effectiveness"));
+   */
 }
 
+/*
 void toggleExtraContent([Event e = null])
 {
   if (moreVisible)
@@ -65,3 +68,4 @@ void showPopup(String name)
     background.style.opacity = "1";
   }
 }
+*/

@@ -5,7 +5,7 @@ void main()
 {
   Page.init("who_we_are");
   
-  
+  /*
   ElementList<DivElement> cardContainers = querySelectorAll(".card-container");
   cardContainers.forEach((DivElement card)
   {    
@@ -13,7 +13,8 @@ void main()
     card.onMouseLeave.listen((_) => toggleCard(card));    
     card.onTouchStart.listen((_) => toggleCard(card));    
   });
-  
+  */
+  /*
   DivElement moreButton = querySelector("#more-button");
   moreButton.onClick.listen((_)
   {
@@ -33,9 +34,10 @@ void main()
       moreButton.innerHtml = "Back -";
     }
   });
-  
+  */
 }
 
+/*
 void toggleCard(DivElement card)
 {
   if (card.children.first.style.transform == "rotateY(180deg)")
@@ -48,4 +50,4 @@ void toggleCard(DivElement card)
     card.children.first.style.transform = "rotateY(180deg)";
     card.children.last.style.transform = "rotateY(0deg)";
   }  
-}
+}*/
