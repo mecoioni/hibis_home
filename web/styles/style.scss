@@ -3,13 +3,13 @@
 
 p, h2, h3, h4, h5
 {
-  margin-left: 2rem;
-  margin-right: 2rem;
+//  margin-left: 2rem;
+//  margin-right: 2rem;
 }
 
 h2, h3, h4, h5
 {
-  color: $blue1;
+  color: $orange2;
 }
 
 html, body
@@ -56,6 +56,7 @@ strong
 ul
 {
   margin-left: 3.12em;
+//  margin-right: 2rem;
 }
 
 .row.full-width
@@ -63,6 +64,11 @@ ul
   width: 100%;
   min-width: 350px;
   max-width: 1280px;
+
+  .columns
+  {
+    padding: 0 1.5rem;
+  }
 
   .columns.full-height
   {
@@ -89,7 +95,7 @@ ul
   -moz-user-select: none;
   -ms-user-select: none;
   color: #fff;
-  background-color: $blue1;
+  background-color: $blue2;
   width: 11em;
   margin: 1em auto !important;
   padding: 1em 1em;
@@ -102,15 +108,13 @@ ul
   }
 }
 
-.button:hover, .button a:hover
+.button:hover
 {
-  background-color: $blue3;
-  color: #eee !important;
+  background-color: $blue1;
 }
 
 .button:active
 {
-  box-shadow:0 1px 4px #aaa;
   transform: translate(1px,1px); -webkit-transform: translate(1px,1px); -moz-transform: translate(1px,1px); -ms-transform: translate(1px,1px);
 }
 
@@ -148,6 +152,11 @@ img.social_icon
   opacity: 0.6;
 }
 
+.bgcolor-blue1
+{
+  background-color: $blue1 !important;
+}
+
 div#header
 {
   padding-top: 2.6em;
@@ -161,7 +170,7 @@ div#footer
 
 div#page-header, div#page-header-blue
 {
-  padding-left: 1em;
+  //padding-left: 1em;
   margin-bottom: 1.8em;
 }
 
@@ -199,7 +208,12 @@ p#copyright
 {
   p.button
   {
+    background-color: $blue2;
     font-size: 0.8em;
+  }
+  p.button:hover
+  {
+    background-color: $blue1;
   }
   padding-top: 2em;
 }
@@ -262,8 +276,9 @@ p#copyright
   {
     position: relative;
     opacity: 0.3;
-    margin: 55px 0 5px 0;
-    width: 32px;
+    margin: 5rem 0 5px 0;
+    width: 20px;
+    min-width: 20px;
     z-index: 100;
   }
 

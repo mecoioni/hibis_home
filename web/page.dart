@@ -40,8 +40,8 @@ class Page
 
         /// special cases: don't show game buttons on contact page, also set the color of the buttons as marked when on the games
         if (id == "contact") querySelector("#game-buttons").remove();
-        else if (id == "flags") querySelector("#button-flags").style.backgroundColor = "#1f3161";
-        else if (id == "honesty") querySelector("#button-honesty").style.backgroundColor = "#1f3161";
+        else if (id == "flags") querySelector("#button-flags").classes.add("bgcolor-blue1");
+        else if (id == "honesty") querySelector("#button-honesty").classes.add("bgcolor-blue1");
       });            
     });
   }

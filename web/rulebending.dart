@@ -97,7 +97,7 @@ class HonestyGame
       _evilBar.style.width = currentBarWidth.toString() + "px";    
       
       int red = _lerp(0, 200, currentBarWidth/evilbarContainerWidth).toInt();
-      _evilBar.style.backgroundColor = "rgba($red,175,175,255)";                      
+      _evilBar.style.backgroundColor = "rgba($red,175,175,255)";
     });    
     
     _pullQuestions(_questionsPerPage);
