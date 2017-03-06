@@ -26,7 +26,7 @@ void main()
     String city = node.id.substring("node-".length);    
     List<Element> bodies = querySelectorAll("#body-" + city);
         
-    node.onMouseOver.listen((_) => toggleBody(city, bodies, node));    
+    node.onClick.listen((_) => toggleBody(city, bodies, node));
     node.onTouchStart.listen((_) => toggleBody(city, bodies, node));      
   });
   

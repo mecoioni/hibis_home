@@ -21,7 +21,6 @@ class Page
       (querySelector("#academy") as AnchorElement).href = "http://fraudacademy.hibis.com";
       (querySelector("#academy_small") as AnchorElement).href = "http://fraudacademy.hibis.com";
 
-
       /// micro nav
       querySelector("#hamburger").onClick.listen(_toggleMicroMenu);  
       querySelector("#micro-nav-list").children.forEach((LIElement li)

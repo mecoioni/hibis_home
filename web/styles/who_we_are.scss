@@ -1,0 +1,75 @@
+@import 'colors';
+
+.card-container
+{
+  position: relative;
+  margin: 1em auto 0.5em auto;
+  max-width: 250px;
+  height: 410px;
+
+  .card-back
+  {
+    overflow: hidden;
+    position: absolute;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1;
+
+    img
+    {
+      display: block;
+      width: 140px;
+      height: 140px;
+      border: 1px solid #eee;
+      border-radius: 5px;
+      margin: 0.3em auto;
+    }
+
+    h1
+    {
+      margin: 1rem 1rem 0 1rem;
+      font-size: 0.9rem !important;
+    }
+
+    h2
+    {
+      margin: 0.2rem 1rem;
+      font-size: 0.8rem !important;
+    }
+
+    p
+    {
+      margin: 0.4rem 0.5rem;
+      font-size: 0.7rem !important;
+      line-height: 120%;
+    }
+
+    hr
+    {
+      background-color: $blue1;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .email
+    {
+      background: url('../gfx/email.svg') 0 5px no-repeat;
+      padding-left: 1.2rem;
+    }
+
+    .phone
+    {
+      background: url('../gfx/phone.svg') 0 2px no-repeat;
+      padding-left: 1.1rem;
+    }
+
+    .mobile
+    {
+      background: url('../gfx/mobile.svg') 2px 2px no-repeat;
+      padding-left: 1.1rem;
+    }
+  }
+}
