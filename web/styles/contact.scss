@@ -78,13 +78,11 @@ div#map-container
 
     h3, h4, h5, p, a, strong
     {
-      color: #fff;
       text-align: center;
     }
 
     a:hover
     {
-      color: #fff;
       text-decoration: underline;
     }
 
@@ -111,6 +109,12 @@ div#map-container
   {
     top: 115px;
     left: 360px;
+  }
+
+  div#gothenburg
+  {
+    top: 145px;
+    left: 312px;
   }
 
   div#london

@@ -1,1 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#383b3d" d="M2.693 12c.674 0 3.108-.233 6.094-3.216C11.768 5.801 12 3.367 12 2.691 12 1.584 10.574.004 10.211 0H9.4a.27.27 0 0 0-.25.167l-1.196 2.82a.272.272 0 0 0 .088.324c1.126.848 1.498 1.106 1.505 1.533 0 .917-3.784 4.702-4.696 4.702-.433-.007-.718-.373-1.565-1.5a.274.274 0 0 0-.324-.09L.167 9.149A.269.269 0 0 0 0 9.398v.812C.004 10.573 1.585 12 2.693 12z"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="31"
+   height="31"
+   id="svg4841"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="phone.svg">
+  <defs
+     id="defs4843" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="44.273115"
+     inkscape:cy="-57.141887"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata4846">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-17.0625,-5.90625)">
+    <path
+       style="fill:#e5ab01;fill-opacity:1;stroke:#e5ab01;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 25.551401,24.419417 c 2,2 2,4 4,4 2,0 4,-2 6,-4 2,-2 4,-4 4,-6 0,-2 -2,-2 -4,-4 -2,-2 4,-7.9999996 6,-7.9999996 2,0 6,5.9999996 6,5.9999996 0,4 -4.109,12.109 -8,16 -3.891,3.891 -12,8 -16,8 0,0 -6,-4 -6,-6 0,-2 6,-8 8,-6 z"
+       id="path4849"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

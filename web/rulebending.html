@@ -18,60 +18,47 @@
 </head>
 
 <body class="unresolved">
-<div class="row full-width">
-  <div class="columns full-height">
-    <div class="row" id="header"></div>
-    <div class="row">
-    <a href="rulebending.html">
-      <div class="columns">
-        <div id="page-header-blue">
-          <h2 class="lang-exp" data-exp="how_far_can_we_bend_the_rules">How far can you bend the rules?</h2>
-        </div>
-      </div>
-    </a>
+<div class="full-width" id="header-container">
+  <div class="row" id="header"></div>
+</div>
+
+<div class="row" id="main">
+  <!-- start -->
+  <div class="large-8 medium-10 medium-centered columns" id="honesty-start-container">
+    <h2 id="start-question"></h2>
+    <img src="gfx/honesty_yes.png" id="start-yes-button" />
+    <img src="gfx/honesty_no.png" id="start-no-button" />
+
+    <h5 id="start-answer"></h5>
+  </div>
+
+  <!-- game -->
+  <div class="large-8 medium-10 medium-centered columns" id="honesty-game-container">
+
+    <div id="avatar-container">
+      <img src="gfx/honesty_angel.png" id="angel" />
+      <img src="gfx/honesty_devil.png" id="devil" />
     </div>
-    <div class="row" style="">
-    
-      <!-- start -->
-      <div class="large-8 medium-10 medium-centered columns" id="honesty-start-container">
-        <h2 id="start-question"></h2>
-        <img src="gfx/honesty_yes.png" id="start-yes-button" />
-        <img src="gfx/honesty_no.png" id="start-no-button" />
-        
-        <h5 id="start-answer"></h5>
-        
-      </div>
-      
-      <!-- game -->
-      <div class="large-8 medium-10 medium-centered columns" id="honesty-game-container">
-        
-        <div id="avatar-container">
-          <img src="gfx/honesty_angel.png" id="angel" />
-          <img src="gfx/honesty_devil.png" id="devil" />
-        </div>
-        
-        <div id="evilbar-container">            
-          <div id="evilbar"></div>
-        </div>
-        
-        <h3 id="question-prefix"></h3>        
-        <div id="question-container"></div>
-        <p id="honesty-feedback"></p>
-        
-        
-        
-        <div id="honesty-submit-job-function">                
-          <p class="lang-exp" data-exp="rulebending_final_question">It would assist our research if you could provide us with details of your job functions (anonymously)</p>
-          <input type="text" id="post-job" placeholder="job functions" />
-          <span id="post-job-button" class="button" style="padding:2px 10px;">send</span>
-          <hr />                  
-        </div>        
-        <p id="honesty-final-feedback" class="feedback-box"></p>                               
-      </div>      
-    </div>                   
-    <div class="row" id="footer"></div>      
+
+    <div id="evilbar-container">
+      <div id="evilbar"></div>
+    </div>
+
+    <h3 id="question-prefix"></h3>
+    <div id="question-container"></div>
+    <p id="honesty-feedback"></p>
+
+    <div id="honesty-submit-job-function">
+      <p class="lang-exp" data-exp="rulebending_final_question">It would assist our research if you could provide us with details of your job functions (anonymously)</p>
+      <input type="text" id="post-job" placeholder="job functions" />
+      <span id="post-job-button" class="button" style="padding:2px 10px;">send</span>
+      <hr />
+    </div>
+    <p id="honesty-final-feedback" class="feedback-box"></p>
   </div>
 </div>
+<div id="footer"></div>
+
 <script type="application/dart" src="rulebending.dart"></script>
 <script data-pub-inline src="packages/browser/dart.js"></script>
 </body>

@@ -10,11 +10,13 @@ void main()
   buttons.forEach((Element button)
   {
     String city = button.id.substring("button-".length);
-    List<Element> bodies = querySelectorAll("#body-" + city);
+    List<Element> bodies = querySelectorAll("#body-" + city).toList(growable: true);
+    bodies.addAll(querySelectorAll("#body-" + city + "-small"));
+
     Element node = querySelector("#node-" + city);
     
-    button.onMouseOver.listen((_) => toggleBody(city, bodies, node));    
-    button.onTouchStart.listen((_) => toggleBody(city, bodies, node));    
+    button.onMouseOver.listen((_) => toggleBody(bodies, node));
+    button.onTouchStart.listen((_) => toggleBody(bodies, node));
   });
   
   
@@ -26,8 +28,8 @@ void main()
     String city = node.id.substring("node-".length);    
     List<Element> bodies = querySelectorAll("#body-" + city);
         
-    node.onClick.listen((_) => toggleBody(city, bodies, node));
-    node.onTouchStart.listen((_) => toggleBody(city, bodies, node));      
+    node.onClick.listen((_) => toggleBody(bodies, node));
+    node.onTouchStart.listen((_) => toggleBody(bodies, node));
   });
   
   ElementList<ImageElement> closeButtons = querySelectorAll(".body-close");
@@ -41,7 +43,7 @@ void main()
   });
 }
 
-void toggleBody(String city, List<Element> bodies, Element node)
+void toggleBody(List<Element> bodies, Element node)
 {
   querySelectorAll(".body").forEach((Element b)
   {

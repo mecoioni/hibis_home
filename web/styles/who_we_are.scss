@@ -1,76 +1,54 @@
 @import 'colors';
 
-.card-container
+.profile
 {
-  position: relative;
-  margin: 1em auto 0.5em auto;
-  max-width: 250px;
-  height: 410px;
-
-  .card-back
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 0.9em;
+  p
   {
-    overflow: hidden;
-    position: absolute;
-    border: 1px solid #eee;
-    border-radius: 5px;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    z-index: 1;
+    margin: 0;
+    line-height: 105%;
+  }
+
+  h5
+  {
+    letter-spacing: 0.05em;
+  }
+
+  a
+  {
+    font-weight: 600;
+    letter-spacing: 0.07em;
+  }
+
+  img.profile-image
+  {
+
+  }
+
+  div.icon-container
+  {
+    width: 1.7em;
+    padding-right:0.7em;
+    display: inline-block;
 
     img
     {
+      -webkit-transform: translateY(0.3em);
+      -moz-transform: translateY(0.3em);
+      -ms-transform: translateY(0.3em);
+      -o-transform: translateY(0.3em);
+      transform: translateY(0.3em);
+      height: 1.3em;
+      margin: 0 auto;
       display: block;
-      width: 140px;
-      height: 140px;
-      border: 1px solid #eee;
-      border-radius: 5px;
-      margin: 0.3em auto;
-    }
-
-    h1
-    {
-      color: $orange2;
-      margin: 1rem 1rem 0 1rem;
-      font-size: 0.9rem !important;
-    }
-
-    h2
-    {
-      margin: 0.2rem 1rem;
-      font-size: 0.8rem !important;
-    }
-
-    p
-    {
-      margin: 0.4rem 0.5rem;
-      font-size: 0.7rem !important;
-      line-height: 120%;
-    }
-
-    hr
-    {
-      background-color: $blue1;
-      padding-top: 0;
-      padding-bottom: 0;
-    }
-
-    .email
-    {
-      background: url('../gfx/email.svg') 0 5px no-repeat;
-      padding-left: 1.2rem;
-    }
-
-    .phone
-    {
-      background: url('../gfx/phone.svg') 0 2px no-repeat;
-      padding-left: 1.1rem;
-    }
-
-    .mobile
-    {
-      background: url('../gfx/mobile.svg') 2px 2px no-repeat;
-      padding-left: 1.1rem;
     }
   }
+
+  div.info
+  {
+    margin: 1em 0;
+  }
 }
+

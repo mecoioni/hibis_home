@@ -34,14 +34,6 @@ class Page
         {
           e.style.opacity = "1";
         });
-
-        /// external links are not allowed in html import, update the linkedin link here instead
-        (querySelector("#linkedin_icon") as AnchorElement).href = "https://www.linkedin.com/company/hibis-europe-limited";
-
-        /// special cases: don't show game buttons on contact page, also set the color of the buttons as marked when on the games
-        if (id == "contact") querySelector("#game-buttons").remove();
-        else if (id == "flags") querySelector("#button-flags").classes.add("bgcolor-blue1");
-        else if (id == "honesty") querySelector("#button-honesty").classes.add("bgcolor-blue1");
       });            
     });
   }
@@ -49,7 +41,7 @@ class Page
   /// Custom html import properties - importing links and buttons are disabled by default
   static final NodeValidatorBuilder htmlValidator = new NodeValidatorBuilder.common()
     ..allowImages(new UriPolicy())    
-    ..allowElement('a', attributes: ['href', 'data-target', 'data-toggle'])
+    ..allowElement('a', attributes: ['href', 'data-target', 'data-toggle', 'data-exp'])
     ..allowElement('p', attributes: ['style'])
     ..allowElement('div', attributes: ['style'])
     ..allowElement('span', attributes: ['class'])
@@ -67,10 +59,6 @@ class Page
     HttpRequest.getString(url).then((String response)
     {         
       container.setInnerHtml(response, validator:htmlValidator);
-      
-      
-      
-      
       if (onDone != null) onDone();      
     }).catchError((e) { print(e.toString()); });
   }
