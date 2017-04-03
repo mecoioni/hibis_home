@@ -123,7 +123,7 @@ div#map-container { }
     div#map-container div.tooltip p { text-align:left; font-size:0.7em; margin-left:10px; }
     
   div#map-container div#oslo { top:110px; left:285px; }
-  div#map-container div#stockholm { top:115px; left:360px; }
+  div#map-container div#stockholm { top:145px; left:311px; }
   div#map-container div#london { top:220px; left:175px; }
   div#map-container div#copenhagen { top:170px; left:305px; }
   div#map-container div#helsinki { top:100px; left:420px; }     
