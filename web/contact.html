@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/contact.css">
 </head>
-
 <body class="unresolved">
 
 <div class="full-width" id="header-container">
@@ -139,9 +138,15 @@
                     </div>
                 </div>
             </div> <!-- /small screens -->
-
             <div class="columns" id="map-container"> <!-- large screens -->
                 <div id="map">
+                    <div class="node" data-target="body-oslo" style="top: 155px; left: 505px;"></div>
+                    <div class="node" data-target="body-stockholm" style="top: 160px; left: 585px;"></div>
+                    <div class="node" data-target="body-london" style="top: 270px; left: 390px;"></div>
+                    <div class="node" data-target="body-malmo" style="top: 220px; left: 540px;"></div>
+                    <div class="node" data-target="body-helsinki" style="top: 150px; left: 640px;"></div>
+
+                    <!--
                     <div class="tooltip" id="oslo">
                         <img src="gfx/node.png" class="node" id="node-oslo" />
                         <div class="body" id="body-oslo">
@@ -167,7 +172,8 @@
                             </p>
                         </div>
                     </div>
-
+                    -->
+<!--
                     <div class="tooltip" id="stockholm">
                         <img src="gfx/node.png" class="node" id="node-stockholm" />
                         <div class="body" id="body-stockholm">
@@ -271,12 +277,12 @@
                             </p>
                         </div>
                     </div>
+-->
                 </div>
             </div>
 
         </div>
     </div>
-
     <div class="row collapse">
         <div class="large-2 large-offset-0 medium-3 medium-offset-1 small-6 columns"><h4 class="button" id="button-oslo">Oslo</h4></div>
         <div class="large-2 medium-3 small-6 columns"><h4 class="button" id="button-stockholm">Stockholm</h4></div>
@@ -285,7 +291,6 @@
         <div class="large-2 medium-3 small-6 columns"><h4 class="button" id="button-copenhagen">Copenhagen</h4></div>
         <div class="large-2 medium-3 small-6 columns end"><h4 class="button" id="button-helsinki">Helsinki</h4></div>
     </div>
-
 </div>
 
 <div id="footer"></div>

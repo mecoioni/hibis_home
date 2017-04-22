@@ -39,7 +39,7 @@ hr
 
 a
 {
-  color: #878787;
+  color: $gray;
   text-decoration: none;
 }
 
@@ -57,10 +57,15 @@ ul
 {
   margin-left: 0;
   list-style: none;
-
+  li
+  {
+    text-indent: -0.5em;
+    margin-left: 1.5em;
+  }
   li:before
   {
-    content: '>> ';
+    margin: 0 0.5em 0 -1em;
+    content: '>>';
     color: $orange1;
     font-weight: bold;
   }
@@ -193,12 +198,13 @@ div#footer
 {
   div.full-width
   {
-    background-color: #ddd;
+    background-color: #9e9a9b;
     margin-top: -10em;
     p
     {
-      font-size: 0.9em;
-      color: #888;
+      margin-top: 1em;
+      font-size: 0.8em;
+      color: white;
     }
   }
 }
@@ -217,10 +223,6 @@ p#copyright
 #game-buttons
 {
   background-color: #eee;
-  .orange-left-border
-  {
-    border-left: 2px solid $orange1;
-  }
 
   .columns
   {
@@ -308,6 +310,11 @@ p#copyright
     background-color: #eee;
     border-radius: 5px;
   }
+}
+
+.blue3-text
+{
+  color: $blue3;
 }
 
 .orange-text

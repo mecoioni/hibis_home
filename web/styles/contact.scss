@@ -22,6 +22,20 @@ div#map-container
     margin-left: auto;
     margin-right: auto;
     background-image: url('../gfx/map.png');
+
+    div.node
+    {
+      position: absolute;
+      background-color: $blue4;
+      width: 0.6rem;
+      height: 0.6rem;
+      border-radius: 100%;
+      cursor: pointer;
+    }
+    div.node.open
+    {
+      background-color: $orange2;
+    }
   }
 
   div.tooltip
@@ -56,6 +70,7 @@ div#map-container
       }
     }
 
+    /*
     img.triangle
     {
       width: 32px;
@@ -64,6 +79,7 @@ div#map-container
       right: -30px;
       z-index: 3;
     }
+    */
 
     img.body-close
     {
