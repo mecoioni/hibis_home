@@ -5,56 +5,21 @@ import 'page.dart';
 void main()
 {
   Page.init("contact");
-  
-  List<Element> buttons = querySelectorAll(".button");
-  buttons.forEach((Element button)
-  {
-    String city = button.id.substring("button-".length);
-    List<Element> bodies = querySelectorAll("#body-" + city).toList(growable: true);
-    bodies.addAll(querySelectorAll("#body-" + city + "-small"));
 
-    Element node = querySelector("#node-" + city);
-    
-    button.onMouseOver.listen((_) => toggleBody(bodies, node));
-    button.onTouchStart.listen((_) => toggleBody(bodies, node));
-  });
-  
-  
-  List<Element> nodes = querySelectorAll(".node");
-  nodes.forEach((Element node)
-  {
-    if (node.id.length == 0) return;
-    
-    String city = node.id.substring("node-".length);    
-    List<Element> bodies = querySelectorAll("#body-" + city);
-        
-    node.onClick.listen((_) => toggleBody(bodies, node));
-    node.onTouchStart.listen((_) => toggleBody(bodies, node));
-  });
-  
-  ElementList<ImageElement> closeButtons = querySelectorAll(".body-close");
-  closeButtons.forEach((img)
-  {
-    img.onClick.listen((_)
-    {
-      img.parent.style.display = "none";
-      querySelectorAll(".node").style.display = "block";
-    });
-  });
+  querySelectorAll(".contact-button").onClick.listen(onButtonClick);
+  querySelectorAll(".node").onClick.listen(onButtonClick);
 }
 
-void toggleBody(List<Element> bodies, Element node)
+void onButtonClick(Event e)
 {
-  querySelectorAll(".body").forEach((Element b)
-  {
-    b.style.display = "none";        
-  });      
-         
-  querySelectorAll(".node").style.display = "block";
-  
-  bodies.forEach((Element body)
-  {
-    body.style.display = "block";
-  });
-  node.style.display = "none";
+  Element source = e.target;
+  querySelectorAll(".node").classes.remove("orange-background");
+  querySelectorAll(".body").classes.add("hide");
+
+  String target = source.dataset["target"];
+
+  querySelector("#small-body-$target").classes.remove("hide");
+  querySelector("#large-body-$target").classes.remove("hide");
+  querySelector("#node-$target").classes.add("orange-background");
+
 }
