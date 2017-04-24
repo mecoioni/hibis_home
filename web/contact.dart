@@ -13,13 +13,13 @@ void main()
 void onButtonClick(Event e)
 {
   Element source = e.target;
-  querySelectorAll(".node").classes.remove("orange-background");
+  querySelectorAll(".node").classes.remove("open");
   querySelectorAll(".body").classes.add("hide");
 
   String target = source.dataset["target"];
 
   querySelector("#small-body-$target").classes.remove("hide");
   querySelector("#large-body-$target").classes.remove("hide");
-  querySelector("#node-$target").classes.add("orange-background");
+  querySelector("#node-$target").classes.add("open");
 
 }

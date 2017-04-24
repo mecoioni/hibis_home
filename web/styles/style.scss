@@ -48,11 +48,12 @@ a:hover
   color: $blue2;
 }
 
+/*
 strong
 {
   color: #555;
 }
-
+*/
 ul
 {
   margin-left: 0;
@@ -98,7 +99,6 @@ ul
   -ms-user-select: none;
   color: #fff;
   background-color: $blue4;
-  margin: 1em auto !important;
   padding: 1em 1em;
   border-left: 1px solid white;
   border-right: 1px solid white;
@@ -149,7 +149,7 @@ img.social_icon
   float: right;
   opacity: 0.6;
 }
-
+/*
 div#frontpage
 {
   position: relative;
@@ -172,7 +172,7 @@ div#frontpage
   height:600px;
   background-image: url('../gfx/frontpage-background.jpg');
 }
-
+*/
 div#header-container
 {
   background-color: #fff;
@@ -196,7 +196,24 @@ div#main
 
 div#footer
 {
-  div.full-width
+  div.game-button
+  {
+    position: relative;
+    overflow: hidden;
+    p
+    {
+      position: absolute;
+      top: 0;
+      margin: 15% 7%;
+      width: 86%;
+      color: $blue3;
+      font-size: 2rem;
+      font-weight: 900;
+      line-height: 100%;
+    }
+  }
+
+  div.lower-footer
   {
     background-color: #9e9a9b;
     margin-top: -10em;
@@ -320,14 +337,19 @@ p#copyright
   color: $blue3;
 }
 
-.orange-background
-{
-  background-color: $orange2 !important;
-}
-
 .orange-text
 {
   color: $orange1;
+}
+
+.red-text
+{
+  color: red;
+}
+
+.white-text
+{
+  color: white;
 }
 
 .small-screen

@@ -12,20 +12,24 @@ div#main
   padding-right: 0;
 }
 
-img#map
+div.small-body
 {
-  margin: 0;
+  margin-top: 2rem;
+  text-align: center;
 }
 
 div.large-body
 {
-  overflow: hidden;
   position: absolute;
-  bottom: 4.1rem;
+  bottom: 3.8rem;
   width: 100%;
 
   div.top, div.bottom
   {
+    overflow: hidden;
+    -webkit-box-shadow: 1px 1px 2px #999;
+    -moz-box-shadow: 1px 1px 2px #999;
+    box-shadow: 1px 1px 2px #999;
     h3
     {
       color: $orange1;
@@ -68,25 +72,29 @@ div#map
   position: relative;
   height: 500px;
   max-width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   background-image: url('../gfx/map.png');
 
   div.node
   {
-    -webkit-transition: background-color 200ms ease;
-    -moz-transition: background-color 200ms ease;
-    -o-transition: background-color 200ms ease;
-    transition: background-color 200ms ease;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
     position: absolute;
     background-color: $blue4;
-    width: 0.6rem;
-    height: 0.6rem;
+    width: 0.7rem;
+    height: 0.7rem;
     border-radius: 100%;
     cursor: pointer;
   }
   div.node.open
   {
+    -webkit-transform: scale(1.5, 1.5);
+    -moz-transform: scale(1.5, 1.5);
+    -ms-transform: scale(1.5, 1.5);
+    -o-transform: scale(1.5, 1.5);
+    transform: scale(1.5, 1.5);
     background-color: $orange2;
   }
 }

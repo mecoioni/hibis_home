@@ -1,8 +1,8 @@
 import 'dart:html';
+import 'phrase.dart';
 
 /// Preload images
 Map<String, ImageElement> img = new Map<String, ImageElement>();
-
 
 class Page
 {  
@@ -10,9 +10,7 @@ class Page
   {
     DivElement header = querySelector("#header");
     DivElement footer = querySelector("#footer");
-    
-    if (header == null || footer == null) throw new StateError("Missing HTML element");
-    
+
     _importHtml(header, "inc/header.html", onDone:()
     {      
       if (id != null && querySelector("#$id") != null) querySelector("#$id").classes.add("active");
@@ -34,22 +32,11 @@ class Page
         {
           e.style.opacity = "1";
         });
+
+        _populatePhrases();
       });            
     });
   }
-    
-  /// Custom html import properties - importing links and buttons are disabled by default
-  static final NodeValidatorBuilder htmlValidator = new NodeValidatorBuilder.common()
-    ..allowImages(new UriPolicy())    
-    ..allowElement('a', attributes: ['href', 'data-target', 'data-toggle', 'data-exp'])
-    ..allowElement('p', attributes: ['style'])
-    ..allowElement('div', attributes: ['style'])
-    ..allowElement('span', attributes: ['class'])
-    ..allowElement('SPAN', attributes: ['class'])
-    ..allowElement('button', attributes: ['data-target', 'data-toggle'])
-    ..allowElement('img', uriPolicy: new UriPolicy(), attributes: ['src'])
-    ..allowElement('IMG', uriPolicy: new UriPolicy(), attributes: ['src'])
-    ..allowElement('iframe', attributes: ['src', 'seamless']);
 
   /// Import html from external document, replaces everything in the specified container
   static void _importHtml(DivElement container, String url, {Function onDone : null})
@@ -58,7 +45,7 @@ class Page
     
     HttpRequest.getString(url).then((String response)
     {         
-      container.setInnerHtml(response, validator:htmlValidator);
+      container.setInnerHtml(response, validator: new TrustedNodeValidator());
       if (onDone != null) onDone();      
     }).catchError((e) { print(e.toString()); });
   }
@@ -67,6 +54,11 @@ class Page
   {
     Element nav = querySelector("#hamburger-menu");
     nav.style.visibility = (nav.style.visibility == "visible") ? "hidden" : "visible";
+  }
+
+  static void _populatePhrases()
+  {
+    querySelectorAll(".lang-exp").forEach((Element e) => e.setInnerHtml(phrase.get(e.dataset["exp"]), validator: new TrustedNodeValidator()));
   }
   
   static String getUrlParam(String key)
@@ -83,7 +75,12 @@ class Page
     
     return null;
   }
+  static Phrase phrase = new Phrase("en");
+}
 
-  
-  
+/// A [NodeValidator] which allows everything.
+class TrustedNodeValidator implements NodeValidator
+{
+  bool allowsElement(Element element) => true;
+  bool allowsAttribute(element, attributeName, value) => true;
 }
