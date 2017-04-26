@@ -21,8 +21,9 @@ div.small-body
 div.large-body
 {
   position: absolute;
-  bottom: 3.8rem;
-  width: 100%;
+  top: 3rem;
+  left: 3rem;
+  width: 13rem;
 
   div.top, div.bottom
   {
@@ -87,14 +88,20 @@ div#map
     height: 0.7rem;
     border-radius: 100%;
     cursor: pointer;
+    -webkit-box-shadow: 0 4px 4px 1px #aaa;
+    -moz-box-shadow: 0 2px 4px 1px #aaa;
+    box-shadow: 0 4px 4px 1px #aaa;
   }
   div.node.open
   {
-    -webkit-transform: scale(1.5, 1.5);
-    -moz-transform: scale(1.5, 1.5);
-    -ms-transform: scale(1.5, 1.5);
-    -o-transform: scale(1.5, 1.5);
-    transform: scale(1.5, 1.5);
-    background-color: $orange2;
+    -webkit-transform: scale(1.3, 1.3);
+    -moz-transform: scale(1.3, 1.3);
+    -ms-transform: scale(1.3, 1.3);
+    -o-transform: scale(1.3, 1.3);
+    transform: scale(1.3, 1.3);
+    background-color: $orange1;
+    -webkit-box-shadow: 0 4px 4px 2px #aaa;
+    -moz-box-shadow: 0 2px 4px 2px #aaa;
+    box-shadow: 0 4px 4px 2px #aaa;
   }
 }

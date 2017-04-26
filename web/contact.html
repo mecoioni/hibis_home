@@ -14,8 +14,8 @@
     <title>Hibis - Contact</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="styles/foundation/css/foundation.min.css">
-    <link rel="stylesheet" href="styles/style.css?v=2">
-    <link rel="stylesheet" href="styles/contact.css?v=2">
+    <link rel="stylesheet" href="styles/style.css?v=3">
+    <link rel="stylesheet" href="styles/contact.css?v=3">
 </head>
 <body class="unresolved">
 <div class="full-width" id="header-container">
@@ -34,125 +34,164 @@
                     <div class="node" data-target="oslo" id="node-oslo" style="top: 155px; left: 505px;"></div>
                     <div class="node" data-target="stockholm" id="node-stockholm" style="top: 160px; left: 585px;"></div>
                     <div class="node" data-target="london" id="node-london" style="top: 270px; left: 390px;"></div>
-                    <div class="node" data-target="malmo" id="node-malmo" style="top: 220px; left: 540px;"></div>
+                    <!--<div class="node" data-target="malmo" id="node-malmo" style="top: 220px; left: 540px;"></div>-->
+                    <div class="node" data-target="gothenburg" id="node-gothenburg" style="top: 200px; left: 530px;"></div>
+                    <div class="node" data-target="copenhagen" id="node-copenhagen" style="top: 220px; left: 535px;"></div>
                     <div class="node" data-target="helsinki" id="node-helsinki" style="top: 150px; left: 640px;"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row collapse">
+                    <div class="node" data-target="rome" id="node-rome" style="top: 415px; left: 540px;"></div>
 
-        <!-- Oslo -->
-        <div class="large-2 large-offset-1 medium-4 medium-offset-0 columns">
-            <div class="body large-body hide large-screen" id="large-body-oslo">
-                <div class="top">
-                    <h3 class="lang-exp" data-exp="oslo"></h3>
-                    <h4 class="lang-exp" data-exp="address_oslo"></h4>
-                </div>
-                <div class="bottom">
-                    <p class="lang-exp" data-exp="contact_oslo"></p>
+                    <div class="body large-body large-screen hide" id="large-body-container">
+                        <div class="top">
+                            <h3 class="city-output"></h3>
+                            <h4 class="address-output"></h4>
+                        </div>
+                        <div class="bottom">
+                            <p class="contact-output"></p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <h4 class="button contact-button lang-exp" data-exp="oslo" data-target="oslo"></h4>
         </div>
+        <div class="row collapse">
+            <div class="columns large-screen">
+                <hr />
+            </div>
+            <!-- Copenhagen -->
+            <div class="large-2 large-offset-2 medium-4 columns">
+                <!--
+                <div class="body large-body hide large-screen" id="large-body-copenhagen">
+                    <div class="top">
+                        <h3 class="lang-exp" data-exp="copenhagen"></h3>
+                        <h4 class="lang-exp" data-exp="address_copenhagen"></h4>
+                    </div>
+                    <div class="bottom">
+                        <p class="lang-exp" data-exp="contact_copenhagen"></p>
+                    </div>
+                </div>
+                -->
+                <h4 class="button contact-button lang-exp" data-exp="copenhagen" data-target="copenhagen" id="button-copenhagen"></h4>
+            </div>
 
-        <!-- Stockholm -->
-        <div class="large-2 medium-4 columns">
-            <div class="body large-body hide large-screen" id="large-body-stockholm">
-                <div class="top">
-                    <h3 class="lang-exp" data-exp="stockholm"></h3>
-                    <h4 class="lang-exp" data-exp="address_stockholm"></h4>
+            <!-- Gothenburg -->
+            <div class="large-2 medium-4 columns">
+                <!--
+                <div class="body large-body hide large-screen" id="large-body-gothenburg">
+                    <div class="top">
+                        <h3 class="lang-exp" data-exp="gothenburg"></h3>
+                        <h4 class="lang-exp" data-exp="address_gothenburg"></h4>
+                    </div>
+                    <div class="bottom">
+                        <p class="lang-exp" data-exp="contact_gothenburg"></p>
+                    </div>
                 </div>
-                <div class="bottom">
-                    <p class="lang-exp" data-exp="contact_stockholm"></p>
-                </div>
+                -->
+                <h4 class="button contact-button lang-exp" data-exp="gothenburg" data-target="gothenburg" id="button-gothenburg"></h4>
             </div>
-            <h4 class="button contact-button lang-exp" data-exp="stockholm" data-target="stockholm"></h4>
-        </div>
 
-        <!-- London -->
-        <div class="large-2 medium-4 columns">
-            <div class="body large-body hide large-screen" id="large-body-london">
-                <div class="top">
-                    <h3 class="lang-exp" data-exp="london"></h3>
-                    <h4 class="lang-exp" data-exp="address_london"></h4>
+            <!-- Helsinki -->
+            <div class="large-2 medium-4 columns end">
+                <!--
+                <div class="body large-body hide large-screen" id="large-body-helsinki">
+                    <div class="top">
+                        <h3 class="lang-exp" data-exp="helsinki"></h3>
+                        <h4 class="lang-exp" data-exp="address_helsinki"></h4>
+                    </div>
+                    <div class="bottom">
+                        <p class="lang-exp" data-exp="contact_helsinki">
+                            <strong>Petri Kelo</strong><br />
+                            <a href="mailto:petri.kelo@centry.global">petri.kelo@centry.global</a><br />
+                            + 358 40 50 001 068
+                        </p>
+                    </div>
                 </div>
-                <div class="bottom">
-                    <p class="lang-exp" data-exp="contact_london"></p>
-                </div>
+                -->
+                <h4 class="button contact-button lang-exp" data-exp="helsinki" data-target="helsinki" id="button-helsinki"></h4>
             </div>
-            <h4 class="button contact-button lang-exp" data-exp="london" data-target="london"></h4>
-        </div>
 
-        <!-- Malmö -->
-        <div class="large-2 large-offset-0 medium-4 medium-offset-2 columns">
-            <div class="body large-body hide large-screen" id="large-body-malmo">
-                <div class="top">
-                    <h3 class="lang-exp" data-exp="malmo"></h3>
-                    <h4 class="lang-exp" data-exp="address_malmo"></h4>
+            <!-- London -->
+            <div class="large-2 medium-4 columns">
+                <!--
+                <div class="body large-body hide large-screen" id="large-body-london">
+                    <div class="top">
+                        <h3 class="lang-exp" data-exp="london"></h3>
+                        <h4 class="lang-exp" data-exp="address_london"></h4>
+                    </div>
+                    <div class="bottom">
+                        <p class="lang-exp" data-exp="contact_london"></p>
+                    </div>
                 </div>
-                <div class="bottom">
-                    <p class="lang-exp" data-exp="contact_malmo"></p>
-                </div>
+                -->
+                <h4 class="button contact-button lang-exp" data-exp="london" data-target="london" id="button-london"></h4>
             </div>
-            <h4 class="button contact-button lang-exp" data-exp="malmo" data-target="malmo"></h4>
-        </div>
 
-        <!-- Helsinki -->
-        <div class="large-2 medium-4 columns end">
-            <div class="body large-body hide large-screen" id="large-body-helsinki">
-                <div class="top">
-                    <h3 class="lang-exp" data-exp="helsinki"></h3>
-                    <h4 class="lang-exp" data-exp="address_helsinki"></h4>
+            <!-- Oslo -->
+            <div class="large-2 large-offset-3 medium-4 columns">
+                <!--
+                <div class="body large-body hide large-screen" id="large-body-oslo">
+                    <div class="top">
+                        <h3 class="lang-exp" data-exp="oslo"></h3>
+                        <h4 class="lang-exp" data-exp="address_oslo"></h4>
+                    </div>
+                    <div class="bottom">
+                        <p class="lang-exp" data-exp="contact_oslo"></p>
+                    </div>
                 </div>
-                <div class="bottom">
-                    <p class="lang-exp" data-exp="contact_helsinki">
-                        <strong>Petri Kelo</strong><br />
-                        <a href="mailto:petri.kelo@centry.global">petri.kelo@centry.global</a><br />
-                        + 358 40 50 001 068
-                    </p>
-                </div>
+                -->
+                <h4 class="button contact-button lang-exp" data-exp="oslo" data-target="oslo" id="button-oslo"></h4>
             </div>
-            <h4 class="button contact-button lang-exp" data-exp="helsinki" data-target="helsinki"></h4>
+
+            <!-- Rome -->
+            <div class="large-2 medium-4 columns">
+                <h4 class="button contact-button lang-exp" data-exp="rome" data-target="rome" id="button-rome"></h4>
+            </div>
+
+            <!-- Stockholm -->
+            <div class="large-2 medium-4 columns end">
+                <!--
+                <div class="body large-body hide large-screen" id="large-body-stockholm">
+                    <div class="top">
+                        <h3 class="lang-exp" data-exp="stockholm"></h3>
+                        <h4 class="lang-exp" data-exp="address_stockholm"></h4>
+                    </div>
+                    <div class="bottom">
+                        <p class="lang-exp" data-exp="contact_stockholm"></p>
+                    </div>
+                </div>
+                -->
+                <h4 class="button contact-button lang-exp" data-exp="stockholm" data-target="stockholm" id="button-stockholm"></h4>
+            </div>
+            <!-- Malmö
+            <div class="large-2 large-offset-0 medium-4 medium-offset-2 columns">
+                <div class="body large-body hide large-screen" id="large-body-malmo">
+                    <div class="top">
+                        <h3 class="lang-exp" data-exp="malmo"></h3>
+                        <h4 class="lang-exp" data-exp="address_malmo"></h4>
+                    </div>
+                    <div class="bottom">
+                        <p class="lang-exp" data-exp="contact_malmo"></p>
+                    </div>
+                </div>
+                <h4 class="button contact-button lang-exp" data-exp="malmo" data-target="malmo"></h4>
+            </div>
+            -->
+            <div class="columns large-screen">
+                <hr />
+            </div>
         </div>
-    </div>
-    <div class="row small-screen">
-        <div class="columns">
-            <div class="body small-body hide" id="small-body-oslo">
-                <h3 class="lang-exp" data-exp="oslo"></h3>
-                <h5 class="lang-exp" data-exp="address_oslo"></h5>
-                <hr />
-                <p class="lang-exp" data-exp="contact_oslo"></p>
-            </div>
-            <div class="body small-body hide" id="small-body-stockholm">
-                <h3 class="lang-exp" data-exp="stockholm"></h3>
-                <h5 class="lang-exp" data-exp="address_stockholm"></h5>
-                <hr />
-                <p class="lang-exp" data-exp="contact_stockholm"></p>
-            </div>
-            <div class="body small-body hide" id="small-body-london">
-                <h3 class="lang-exp" data-exp="london"></h3>
-                <h5 class="lang-exp" data-exp="address_london"></h5>
-                <hr />
-                <p class="lang-exp" data-exp="contact_london"></p>
-            </div>
-            <div class="body small-body hide" id="small-body-malmo">
-                <h3 class="lang-exp" data-exp="malmo"></h3>
-                <h5 class="lang-exp" data-exp="address_malmo"></h5>
-                <hr />
-                <p class="lang-exp" data-exp="contact_malmo"></p>
-            </div>
-            <div class="body small-body hide" id="small-body-helsinki">
-                <h3 class="lang-exp" data-exp="helsinki"></h3>
-                <h5 class="lang-exp" data-exp="address_helsinki"></h5>
-                <hr />
-                <p class="lang-exp" data-exp="contact_helsinki"></p>
+        <div class="row small-screen">
+            <div class="columns">
+                <div class="body small-body hide">
+                    <h3 class="city-output"></h3>
+                    <h5 class="address-output"></h5>
+                    <hr />
+                    <p class="contact-output"></p>
+                </div>
             </div>
         </div>
     </div>
 </div>
 <div id="footer"></div>
-<script type="application/dart" src="contact.dart?v=2"></script>
+<script type="application/dart" src="contact.dart?v=3"></script>
 <script data-pub-inline src="packages/browser/dart.js"></script>
 </body>
 </html>
