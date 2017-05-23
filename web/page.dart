@@ -58,6 +58,7 @@ class Page
 
   static void _populatePhrases()
   {
+    if (Uri.base.queryParameters.containsKey("lang")) phrase.language = Uri.base.queryParameters["lang"];
     querySelectorAll(".lang-exp").forEach((Element e) => e.setInnerHtml(phrase.get(e.dataset["exp"]), validator: new TrustedNodeValidator()));
   }
   

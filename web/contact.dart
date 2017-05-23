@@ -1,4 +1,5 @@
 import "dart:html";
+import 'slideshow.dart';
 import 'page.dart';
 import 'phrase.dart';
 
@@ -14,6 +15,7 @@ final NodeValidator validator = new NodeValidatorBuilder.common()..allowNavigati
 
 void main()
 {
+  new Slideshow(querySelector(".slide-container"));
   Page.init("contact");
 
   cityButtons.onClick.listen(onButtonClick);

@@ -2,10 +2,11 @@
 // is governed by a BSD-style license that can be found in the LICENSE file.
 
 import 'dart:html';
-import 'dart:async';
+import 'slideshow.dart';
 import 'page.dart';
 
 void main() 
 {
+  new Slideshow(querySelector(".slide-container"));
   Page.init(null);
 }

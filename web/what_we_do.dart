@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:html';
+import 'slideshow.dart';
 import 'page.dart';
 
 
@@ -10,6 +11,7 @@ bool moreVisible = false;
 
 void main()
 {
+  new Slideshow(querySelector(".slideshow-container"));
   Page.init("what_we_do");
 
   querySelectorAll(".collapse-toggle").forEach((e) => e.onClick.listen(toggleCollapsed));

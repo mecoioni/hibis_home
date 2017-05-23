@@ -138,6 +138,11 @@ ul
   transition: opacity 1s;  -webkit-transition: opacity 1s; -moz-transition: opacity 1s; -o-transition: opacity 1s;
 }
 
+.no-height
+{
+  height: 0;
+}
+
 .invisible
 {
   opacity: 0;
