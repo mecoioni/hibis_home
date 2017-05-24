@@ -8,7 +8,7 @@ import 'dart:math' show Random;
 import 'page.dart';
 
 int evilScore;
-int evilbarContainerWidth;
+int evilBarContainerWidth;
 
 void main()
 {  
@@ -29,17 +29,22 @@ class HonestyGame
   }
   
   void _load(String data)
-  {    
-    Map<String, dynamic> dataMap = JSON.decode(data);    
-    if (!dataMap.containsKey("questions")) throw new StateError("Missing required key: questions");
-    if (!(dataMap["questions"] is List<String>)) throw new StateError("Invalid data: questions");
-    if ((dataMap["questions"] as List<String>).isEmpty) throw new StateError("Invalid data: no questions");
-    if (!dataMap.containsKey("feedback")) throw new StateError("Missing required key: feedback");
-    if (!dataMap.containsKey("finally")) throw new StateError("Missing required key: finally");
-    if (!dataMap.containsKey("prefix")) throw new StateError("Missing required key: prefix");
-    if (!dataMap.containsKey("start-question")) throw new StateError("Missing required key: start-question");
+  {
+    String lang = "en";
+    if (Uri.base.queryParameters.containsKey("lang")) lang = Uri.base.queryParameters["lang"];
+    else if (window.sessionStorage.containsKey("lang")) lang = window.sessionStorage["lang"];
+    Map<String, Map<String, dynamic>> dataMap = JSON.decode(data);
+    Map<String, dynamic> content = dataMap[lang];
+
+    if (!content.containsKey("questions")) throw new StateError("Missing required key: questions");
+    if (!(content["questions"] is List<String>)) throw new StateError("Invalid data: questions");
+    if ((content["questions"] as List<String>).isEmpty) throw new StateError("Invalid data: no questions");
+    if (!content.containsKey("feedback")) throw new StateError("Missing required key: feedback");
+    if (!content.containsKey("finally")) throw new StateError("Missing required key: finally");
+    if (!content.containsKey("prefix")) throw new StateError("Missing required key: prefix");
+    if (!content.containsKey("start-question")) throw new StateError("Missing required key: start-question");
     
-    querySelector("#start-question").innerHtml = dataMap["start-question"];
+    querySelector("#start-question").innerHtml = content["start-question"];
     
     /// css animation is not fully supported in android, do it here instead
     _toggleScaleRecursive(querySelector("#angel"));
@@ -65,24 +70,24 @@ class HonestyGame
       _parseStart(p);
     });
     
-    _feedback = dataMap["feedback"];   
-    _finalFeedback = dataMap["finally"];
-    _questionsPerPage = (dataMap.containsKey("per_page")) ? dataMap["per_page"] : 4;
-    _questionPool = dataMap["questions"];    
-    _totalQuestions = (dataMap.containsKey("total")) ? dataMap["total"] : _questionPool.length;  
+    _feedback = content["feedback"];
+    _finalFeedback = content["finally"];
+    _questionsPerPage = (content.containsKey("per_page")) ? content["per_page"] : 4;
+    _questionPool = content["questions"];
+    _totalQuestions = (content.containsKey("total")) ? content["total"] : _questionPool.length;
     
     evilScore = 0;    
     _rnd = new Random();
     _currentQuestions = new List<Question>();    
-    querySelector("#question-prefix").innerHtml = dataMap["prefix"];
+    querySelector("#question-prefix").innerHtml = content["prefix"];
           
     _container = querySelector("#question-container");
     _evilBar = querySelector("#evilbar");
     
     // Calculate the max influence of each question on the evilbar 
-    Rectangle evilbarContainerRect = querySelector("#evilbar-container").getClientRects().first;
-    evilbarContainerWidth = (evilbarContainerRect.right - evilbarContainerRect.left).toInt();    
-    _questionScoreMax = (evilbarContainerWidth ~/ _totalQuestions);
+    Rectangle evilBarContainerRect = querySelector("#evilbar-container").getClientRects().first;
+    evilBarContainerWidth = (evilBarContainerRect.right - evilBarContainerRect.left).toInt();
+    _questionScoreMax = (evilBarContainerWidth ~/ _totalQuestions);
           
     _clickListener = window.onClick.listen((_)
     {
@@ -91,12 +96,12 @@ class HonestyGame
       {        
         _currentQuestions.firstWhere((Question q) => !q.selected);                
       }
-      on StateError catch (e) { _pullQuestions(_questionsPerPage); }       
+      on StateError { _pullQuestions(_questionsPerPage); }
       
-      int currentBarWidth = ((evilbarContainerWidth ~/ 2) + evilScore);      
+      int currentBarWidth = ((evilBarContainerWidth ~/ 2) + evilScore);
       _evilBar.style.width = currentBarWidth.toString() + "px";    
       
-      int red = _lerp(0, 200, currentBarWidth/evilbarContainerWidth).toInt();
+      int red = _lerp(0, 200, currentBarWidth/evilBarContainerWidth).toInt();
       _evilBar.style.backgroundColor = "rgba($red,175,175,255)";
     });    
     
@@ -124,7 +129,7 @@ class HonestyGame
           }); 
           if (found != null) _feedback.remove(found);
         }
-        on StateError catch (e) { break; }
+        on StateError { break; }
       }
       
       Element prefix = querySelector("#question-prefix");
@@ -249,7 +254,7 @@ class Question
       if (!_selected)
       {         
         evilScore += _evilPoints;
-        int halfWidth = evilbarContainerWidth ~/ 2;
+        int halfWidth = evilBarContainerWidth ~/ 2;
         if (evilScore < -halfWidth) evilScore = -halfWidth;
         _yes.style.opacity = "1";
         _no.style.opacity = "0.1";
@@ -261,7 +266,7 @@ class Question
       if (!_selected)
       {                
         evilScore -= _evilPoints;
-        int halfWidth = evilbarContainerWidth ~/ 2;
+        int halfWidth = evilBarContainerWidth ~/ 2;
         if (evilScore > halfWidth) evilScore = halfWidth;
         _yes.style.opacity = "0.1";
         _no.style.opacity = "1";

@@ -11,7 +11,7 @@ bool moreVisible = false;
 
 void main()
 {
-  new Slideshow(querySelector(".slideshow-container"));
+  new SlideShow(querySelector(".slideshow-container"));
   Page.init("what_we_do");
 
   querySelectorAll(".collapse-toggle").forEach((e) => e.onClick.listen(toggleCollapsed));

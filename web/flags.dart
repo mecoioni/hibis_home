@@ -5,6 +5,7 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:html';
 import 'page.dart';
+import 'page.dart';
 import 'package:elements/elements.dart' show StopwatchElement;
 
 int flagNumber = 1;
@@ -24,10 +25,15 @@ class FlagsGame
   }
   
   void _load(String response)
-  {    
+  {
     try
     {
-       _properties = JSON.decode(response);               
+      Map<String, Map<String, dynamic>> data = JSON.decode(response);
+
+      String lang = "en";
+      if (Uri.base.queryParameters.containsKey("lang")) lang = Uri.base.queryParameters["lang"];
+      else if (window.sessionStorage.containsKey("lang")) lang = window.sessionStorage["lang"];
+      _properties = data[lang];
     }
     on FormatException catch(e,s)
     {
@@ -72,7 +78,7 @@ class FlagsGame
     _stopwatch = new StopwatchElement(60000, querySelector("#stopwatch-container"), delay:new Duration(seconds:2), onDone:_showRemainingAnswers);
     
     _conclusion = _properties["conclusion"];
-    
+
     Page.init("flags");
   }
   

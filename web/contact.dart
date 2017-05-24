@@ -15,7 +15,7 @@ final NodeValidator validator = new NodeValidatorBuilder.common()..allowNavigati
 
 void main()
 {
-  new Slideshow(querySelector(".slide-container"));
+  new SlideShow(querySelector(".slide-container"));
   Page.init("contact");
 
   cityButtons.onClick.listen(onButtonClick);

@@ -1,6 +1,7 @@
 import 'dart:html';
 import 'phrase.dart';
 
+
 /// Preload images
 Map<String, ImageElement> img = new Map<String, ImageElement>();
 
@@ -58,7 +59,13 @@ class Page
 
   static void _populatePhrases()
   {
-    if (Uri.base.queryParameters.containsKey("lang")) phrase.language = Uri.base.queryParameters["lang"];
+    if (Uri.base.queryParameters.containsKey("lang")) phrase.language = window.sessionStorage["lang"] = Uri.base.queryParameters["lang"];
+
+    else if (window.sessionStorage.containsKey("lang"))
+    {
+      phrase.language = window.sessionStorage["lang"];
+    }
+
     querySelectorAll(".lang-exp").forEach((Element e) => e.setInnerHtml(phrase.get(e.dataset["exp"]), validator: new TrustedNodeValidator()));
   }
   

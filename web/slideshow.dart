@@ -2,10 +2,11 @@ import 'dart:async';
 import 'dart:html';
 import 'dart:math' show Random;
 
-class Slideshow
+class SlideShow
 {
-  Slideshow(this._container)
+  SlideShow(this._container)
   {
+    _container.style.backgroundColor = "#000";
     _imageList.forEach(_container.append);
     for (int i = 0; i < _imageList.length; i++)
     {
@@ -15,6 +16,22 @@ class Slideshow
       img.style.transition = "opacity 600ms ease";
       _container.append(img);
     }
+
+    HeadingElement textStrip = new HeadingElement.h2();
+    textStrip.classes.add("lang-exp");
+    textStrip.dataset["exp"] = "frontpage_title";
+    textStrip.style.position = "absolute";
+    textStrip.style.textTransform = "inherit";
+    textStrip.style.bottom = "10%";
+    textStrip.style.backgroundColor = "rgba(0,0,0,0.6)";
+    textStrip.style.color = "white";
+    textStrip.style.padding = "0.4em 0.1em";
+    textStrip.style.margin = "0";
+    textStrip.style.textAlign = "center";
+    textStrip.style.width = "100%";
+
+    _container.append(textStrip);
+
 
     _currentIndex = _rnd.nextInt(_imageList.length);
     _imageList[_currentIndex].classes.remove("no-height");
