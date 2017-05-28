@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,gBACA,CACE,cAAc,CAAE,IAAI,CACpB,cAAc,CAAE,IAAI,CACpB,UAAU,CAAE,IAAI,CAChB,aAAa,CAAE,GAAG,CAKlB,2BACA,CACE,UAAU,CAAE,CAAC,CACb,WAAW,CAAE,GAAG,CAChB,cAAc,CAAE,GAAG",
+"mappings": "AAAA,QACA,CAME,UAAU,CAAE,CAAC",
 "sources": ["index.scss"],
 "names": [],
 "file": "index.css"

@@ -30,16 +30,18 @@ html, body
   margin: 0;
   padding: 0;
   font-family: Myriad Pro, "texgyreherosregular", sans-serif;
+  font-size: 14px;
 }
 
 html
 {
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 body
 {
-  background-color: $blue3;
+  background-color: #9e9a9b;
 }
 
 hr
@@ -138,6 +140,11 @@ ul
   transition: opacity 1s;  -webkit-transition: opacity 1s; -moz-transition: opacity 1s; -o-transition: opacity 1s;
 }
 
+.margin-top-3
+{
+  margin-top: 3rem;
+}
+
 .no-height
 {
   height: 0;
@@ -168,17 +175,16 @@ ul
 div#header-container
 {
   background-color: #fff;
-  border-bottom: 1px solid #eee;
   div#header
   {
-    padding-top: 1.6em;
-    height: 8.6em;
+    padding-top: 3.5rem;
+    //height: 8.6em;
 
     ul#nav-list
     {
       li
       {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         font-family: "PT Sans", sans-serif;
       }
     }
@@ -189,14 +195,13 @@ div#main
 {
   z-index: 10;
   min-height: 60vh;
-  padding-left: 4rem;
-  padding-right: 4rem;
-  padding-top: 2rem;
+  padding-bottom: 1rem;
   background-color: #fff;
 }
 
 div#footer
 {
+  background-color: #eee;
   div.game-button
   {
     -webkit-box-shadow: 0 2px 2px 2px #ddd;
@@ -233,7 +238,6 @@ div#footer
   div.lower-footer
   {
     background-color: #9e9a9b;
-    margin-top: -10em;
     p
     {
       margin-top: 1em;
@@ -245,7 +249,9 @@ div#footer
 
 img#logo
 {
-  height:85px;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+  height: 65px;
 }
 
 p#copyright
@@ -256,11 +262,12 @@ p#copyright
 
 #game-buttons
 {
-  background-color: #eee;
+  //background-color: #eee;
 
   .columns
   {
-    margin-top: 1rem; margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -288,13 +295,13 @@ p#copyright
   }
   li:before
   {
-    margin: 0;
+    margin: 0 0.5em 0 0;
     content: '';
   }
   li:after
   {
     content: "|";
-    margin: 0 0 0 0.3em;
+    margin: 0 0 0 0.5em;
   }
   li:last-child:after
   {
@@ -411,10 +418,5 @@ p#copyright
 // <=SMALL SCREEN
 @media only screen and (max-width:639px)
 {
-  div#main
-  {
-    padding-left: 0;
-    padding-right: 0;
 
-  }
 }

@@ -6,29 +6,35 @@ class SlideShow
 {
   SlideShow(this._container)
   {
-    _container.style.backgroundColor = "#000";
     _imageList.forEach(_container.append);
+    _container.style.position = "relative";
+    //_container.style.marginBottom = "2rem";
+    _container.style.backgroundColor = "white";
+
     for (int i = 0; i < _imageList.length; i++)
     {
       ImageElement img = _imageList[i];
       img.alt = "slide-$i";
       img.className = "no-height";
+      img.style.display = "block";
+      img.style.position = "relative";
       img.style.transition = "opacity 600ms ease";
+      img.style.width = "100%";
+      img.style.zIndex = "1";
       _container.append(img);
     }
 
     HeadingElement textStrip = new HeadingElement.h2();
     textStrip.classes.add("lang-exp");
     textStrip.dataset["exp"] = "frontpage_title";
-    textStrip.style.position = "absolute";
     textStrip.style.textTransform = "inherit";
-    textStrip.style.bottom = "10%";
     textStrip.style.backgroundColor = "rgba(0,0,0,0.6)";
     textStrip.style.color = "white";
     textStrip.style.padding = "0.4em 0.1em";
-    textStrip.style.margin = "0";
+    textStrip.style.margin = "-7rem auto 0 auto";
     textStrip.style.textAlign = "center";
-    textStrip.style.width = "100%";
+    textStrip.style.position = "relative";
+    textStrip.style.zIndex = "2";
 
     _container.append(textStrip);
 
@@ -55,6 +61,7 @@ class SlideShow
 
   final List<ImageElement> _imageList =
   [
+
     new ImageElement(src: "gfx/slide_1.jpg"),
     new ImageElement(src: "gfx/slide_2.jpg"),
     new ImageElement(src: "gfx/slide_3.jpg"),
@@ -65,9 +72,11 @@ class SlideShow
     new ImageElement(src: "gfx/slide_8.jpg"),
     new ImageElement(src: "gfx/slide_9.jpg"),
     new ImageElement(src: "gfx/slide_10.jpg")
+
   ];
 
   int _currentIndex;
+  final String width = "1400px";
   final Random _rnd = new Random(new DateTime.now().millisecondsSinceEpoch);
   final Element _container;
 }

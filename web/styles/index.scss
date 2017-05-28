@@ -1,17 +1,10 @@
-#frontpage_title
+div#main
 {
-  letter-spacing: -2px;
-  text-transform: none;
-  margin-top: 10em;
-  margin-bottom: 3em;
-}
+  /*
+  display: flex;
+  align-items: center;
+  justify-content: center;
+*/
+  min-height: 0;
 
-div#footer
-{
-  div.lower-footer
-  {
-    margin-top: 0;
-    padding-top: 3em;
-    padding-bottom: 8em;
-  }
 }

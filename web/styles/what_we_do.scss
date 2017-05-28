@@ -31,11 +31,12 @@
   transition: max-height 300ms;
 }
 
+/*
 .collapsible:last-child
 {
   margin-bottom: 3rem;
 }
-
+*/
 .collapsible.collapsed
 {
   max-height: 0;

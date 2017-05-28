@@ -22,7 +22,7 @@ div.large-body
 {
   position: absolute;
   top: 3rem;
-  left: 3rem;
+  left: 15%;
   width: 13rem;
 
   div.top, div.bottom
@@ -53,7 +53,7 @@ div.large-body
       padding: 0.3em 0;
       margin: 0 0.5rem;
     }
-    background-color: $gray-bright;
+    background-color: #fff;
   }
 
   div.top
@@ -64,18 +64,26 @@ div.large-body
 
   div.bottom
   {
-    margin-top: 0.3em;
+    margin-top: 0.05em;
+    padding-left: 0.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
   }
 }
 
 div#map
 {
   position: relative;
-  height: 500px;
-  max-width: 1024px;
+  //height: 600px;
+  //max-width: 1024px;
   margin: 0 auto;
-  background-image: url('../gfx/map.png');
+  //background-image: url('../gfx/map.png');
 
+  img
+  {
+    width: 100%;
+  }
   div.node
   {
     -webkit-transition: all 200ms ease;
@@ -84,8 +92,8 @@ div#map
     transition: all 200ms ease;
     position: absolute;
     background-color: $blue4;
-    width: 0.7rem;
-    height: 0.7rem;
+    width: 0.5rem;
+    height: 0.5rem;
     border-radius: 100%;
     cursor: pointer;
     -webkit-box-shadow: 0 4px 4px 1px #aaa;
