@@ -52,21 +52,21 @@
     "h":"515px",
     "triggers":
     [
-      {"x":"120px", "y":"65px", "w":"180px", "h":"50px", "flag":"gfx/flag.png", "description":"Indicates possible front company address (5 lines, central London etc)"},
-      {"x":"110px", "y":"125px", "w":"205px", "h":"17px", "flag":"gfx/flag.png", "description":"Low invoice number (number 3 in a sequence in April 2014) indicates the company may not have so many other customers"},
-      {"x":"155px", "y":"142px", "w":"110px", "h":"15px", "flag":"gfx/flag.png", "description":"Date does not exist - indicates sloppiness"},
-      {"x":"5px", "y":"225px", "w":"225px", "h":"33px", "flag":"gfx/flag.png", "description":"Vague description of services provided and the company is invoicing for work which is STILL to take place"},
-      {"x":"5px", "y":"265px", "w":"400px", "h":"30px", "flag":"gfx/flag.png", "description":"Reference to the Purchase Order and verbal confirmations feels like overkill?"},
-      {"x":"5px", "y":"300px", "w":"165px", "h":"90px", "flag":"gfx/flag.png", "description":"UK Bank account when the company is in fact registered in another country"},
-      {"x":"130px", "y":"417px", "w":"160px", "h":"15px", "flag":"gfx/flag.png", "description":"Gmail address indicates that the company does not have its own domain and increases indications that the “company” is not totally bonafide"},
-      {"x":"15px", "y":"428px", "w":"380px", "h":"15px", "flag":"gfx/flag.png", "description":"British Virgin Islands registration (one of many destinations where it is possible to have nominee shareholders which to a large extent amounts to \"hidden ownership\")"},
-      {"x":"320px", "y":"235px", "w":"80px", "h":"30px", "flag":"gfx/flag.png", "description":"Big round number"}
+      {"x":"120px", "y":"65px", "w":"180px", "h":"50px", "flag":"gfx/flag.png", "description":"Potrebbe indicare un prestanome o una società fantasma (indirizzo a 5 righe, in centro a Londra ecc)"},
+      {"x":"110px", "y":"125px", "w":"205px", "h":"17px", "flag":"gfx/flag.png", "description":"Il numero di fattura è piuttosto basso (solo 3 sarebbero state emesse fino ad Aprile 2014), il che fa pensare che la ditta non abbia molti clienti "},
+      {"x":"155px", "y":"142px", "w":"110px", "h":"15px", "flag":"gfx/flag.png", "description":"Data inesistente - errore grossolano"},
+      {"x":"5px", "y":"225px", "w":"225px", "h":"33px", "flag":"gfx/flag.png", "description":"Descrizione vaga e generica dei servizi offerti, e il fornitore sembra fatturare in anticipo per lavori non ancora svolti"},
+      {"x":"5px", "y":"265px", "w":"400px", "h":"30px", "flag":"gfx/flag.png", "description":"Eccesso di dettagli: oltre al riferimento all'ordine di acquisto, viene riportata anche la conferma verbale dell'ordine stesso"},
+      {"x":"5px", "y":"300px", "w":"165px", "h":"90px", "flag":"gfx/flag.png", "description":"Conto corrente nel Regno Unito per una ditta registrata in un altro stato"},
+      {"x":"130px", "y":"417px", "w":"160px", "h":"15px", "flag":"gfx/flag.png", "description":"Un indirizzo Gmail implica che la ditta non abbia un proprio dominio, dettaglio che al giorno d'oggi può metterne in dubbio la legittimità"},
+      {"x":"15px", "y":"428px", "w":"380px", "h":"15px", "flag":"gfx/flag.png", "description":"Azienda registrata alle British Virgin Islands (uno fra molti \"paradisi fiscali\", dove è di fatto possibile intestare azioni a intermediari, nascondendone così i beneficiari ultimi)"},
+      {"x":"320px", "y":"235px", "w":"80px", "h":"30px", "flag":"gfx/flag.png", "description":"Cifra tonda"}
     ],
     "limit":5,
-    "title":"Can you spot <span class=\"red\">5 red flags</span> on this invoice?",
-    "description":"Click on any areas of the invoice which look a little bit suspicious.",
-    "time-description":"YOU HAVE 1 MINUTE!",
-    "conclusion":"<strong>How many did you see?</strong><br />The Fraud Detective believes there are at least nine! When people look at an invoice which has already been approved they tend to spot very few red flags…"
+    "title":"Riuscireste a vedere almeno <span class=\"red\">5 red flags</span> su questa fattura?",
+    "description":"Cliccate sullo schermo le aree che vi sembrano più sospette.",
+    "time-description":"AVETE 1 MINUTO!",
+    "conclusion":"<strong>Quante ne avete trovate?</strong><br />Il nostro \"Fraud Detective\" ne ha trovate almeno nove, ma di solito si notano molto meno su una fattura che è già stata approvata da altri…"
   }
 }
 
