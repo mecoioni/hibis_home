@@ -20,6 +20,7 @@
     "title":"Can you spot <span class=\"red\">5 red flags</span> on this invoice?",
     "description":"Click on any areas of the invoice which look a little bit suspicious.",
     "time-description":"YOU HAVE 1 MINUTE!",
+    "result" : "YOU FOUND % FLAGS!",
     "conclusion":"<strong>How many did you see?</strong><br />The Fraud Detective believes there are at least nine! When people look at an invoice which has already been approved they tend to spot very few red flags…"
   },
   "no" :
@@ -43,6 +44,7 @@
     "title":"Can you spot <span class=\"red\">5 red flags</span> on this invoice?",
     "description":"Click on any areas of the invoice which look a little bit suspicious.",
     "time-description":"YOU HAVE 1 MINUTE!",
+    "result" : "YOU FOUND % FLAGS!",
     "conclusion":"<strong>How many did you see?</strong><br />The Fraud Detective believes there are at least nine! When people look at an invoice which has already been approved they tend to spot very few red flags…"
   },
   "it" :
@@ -66,6 +68,7 @@
     "title":"Riuscireste a vedere almeno <span class=\"red\">5 red flags</span> su questa fattura?",
     "description":"Cliccate sullo schermo le aree che vi sembrano più sospette.",
     "time-description":"AVETE 1 MINUTO!",
+    "result" : "HAI TROVATO IL % BOLLONES!",
     "conclusion":"<strong>Quante ne avete trovate?</strong><br />Il nostro \"Fraud Detective\" ne ha trovate almeno nove, ma di solito si notano molto meno su una fattura che è già stata approvata da altri…"
   }
 }

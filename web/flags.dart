@@ -47,8 +47,10 @@ class FlagsGame
     if (!_properties.containsKey("title")) throw new StateError("Loading FlagsGame: Missing required key: title");
     if (!_properties.containsKey("description")) throw new StateError("Loading FlagsGame: Missing required key: description");
     if (!_properties.containsKey("time-description")) throw new StateError("Loading FlagsGame: Missing required key: time-description");
+    if (!_properties.containsKey("result")) throw new StateError("Loading FlagsGame: Missing required key: result");
     if (!_properties.containsKey("conclusion")) throw new StateError("Loading FlagsGame: Missing required key: conclusion");    
     if (!_properties.containsKey("limit")) throw new StateError("Loading FlagsGame: Missing required key: limit");
+
 
     _answerLimit = _properties["limit"];
     _canvas = querySelector("#flags-canvas");
@@ -111,8 +113,9 @@ class FlagsGame
         if (trigger.isNotFound) trigger.show();
       });
     });
-    
-    _timeDescription.innerHtml = "You found " + (foundAnswers).toString() + " flag(s)!";
+
+    String result = _properties["result"];
+    _timeDescription.innerHtml = result.replaceFirst("%", foundAnswers.toString()); //"You found " + (foundAnswers).toString() + " flag(s)!";
     
     new Timer(const Duration(seconds:2), ()
     {

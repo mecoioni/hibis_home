@@ -2,6 +2,9 @@
   "en":
   {
     "start-question": "Do you think you are a basically honest person?",
+    "start_answer_yes" : "THATS GOOD, SO PLEASE ANSWER THE FOLLOWING QUESTIONS",
+    "start_answer_yes_blinking" : "HONESTLY",
+    "start_answer_no" : "NOT MUCH POINT TAKING THE TEST THEN, IS THERE? BUT THERE ARE OF COURSE DIFFERENT LEVELS OF HONESTY - SO WHY NOT TAKE THE TEST ANYWAY?",
     "prefix": "Have you ever...?",
     "per_page": 3,
     "total": 10,
@@ -62,7 +65,7 @@
       "-130":
       {
         "title": "Saint",
-        "description": "<strong>You are either:</strong><ul><li>a saint and we are awed to be visited by you as these occasions are rare... or would you have answered yes, if we asked some other questions?</li></ul><div id=\"honesty-suggestions\"><label for=\"honesty-suggestions-textarea\">Let us know:</label><textarea id=\"honesty-suggestions-textarea\"></textarea><span class=\"button centered\" id=\"honesty-suggestions-button\">send</span></div></li><li>...or you did not answer honestly, in which case please go <strong><a href=\"rulebending.html\">back</a></strong> and re-do the questions</li>"
+        "description": "<strong>You are either:</strong><ul><li>a saint and we are awed to be visited by you as these occasions are rare...or would you have answered yes, if we asked some other questions?</li></ul><div id=\"honesty-suggestions\"><label for=\"honesty-suggestions-textarea\">Let us know:</label><textarea id=\"honesty-suggestions-textarea\"></textarea><span class=\"button centered\" id=\"honesty-suggestions-button\">send</span></div><ul><li>...or you did not answer honestly, in which case please go <strong><a href=\"rulebending.html\">back</a></strong> and re-do the questions</li></ul>"
       }
     },
     "finally": "Thank you for participating in this anonymous survey. While there are very few pathological fraudsters, there are also only a few of us who can really claim to be 100% percent honest.. But don’t feel too down about this. Being <strong>aware</strong> of our own capacity to cheat is in fact a strength. Awareness helps us to control our behaviour, <strong>and</strong> to spot fraud and corruption happening around us..."
@@ -70,6 +73,9 @@
   "no":
   {
     "start-question": "Do you think you are a basically honest person?",
+    "start_answer_yes" : "THATS GOOD, SO PLEASE ANSWER THE FOLLOWING QUESTIONS",
+    "start_answer_yes_blinking" : "HONESTLY",
+    "start_answer_no" : "NOT MUCH POINT TAKING THE TEST THEN, IS THERE? BUT THERE ARE OF COURSE DIFFERENT LEVELS OF HONESTY - SO WHY NOT TAKE THE TEST ANYWAY?",
     "prefix": "Have you ever...?",
     "per_page": 3,
     "total": 10,
@@ -130,7 +136,7 @@
       "-130":
       {
         "title": "Saint",
-        "description": "<strong>You are either:</strong><ul><li>a saint and we are awed to be visited by you as these occasions are rare...or would you have answered yes, if we asked some other questions?</li></ul><div id=\"honesty-suggestions\"><label for=\"honesty-suggestions-textarea\">Let us know:</label><textarea id=\"honesty-suggestions-textarea\"></textarea><span class=\"button centered\" id=\"honesty-suggestions-button\">send</span></div></li><li>...or you did not answer honestly, in which case please go <strong><a href=\"rulebending.html\">back</a></strong> and re-do the questions</li>"
+        "description": "<strong>You are either:</strong><ul><li>a saint and we are awed to be visited by you as these occasions are rare...or would you have answered yes, if we asked some other questions?</li></ul><div id=\"honesty-suggestions\"><label for=\"honesty-suggestions-textarea\">Let us know:</label><textarea id=\"honesty-suggestions-textarea\"></textarea><span class=\"button centered\" id=\"honesty-suggestions-button\">send</span></div><ul><li>...or you did not answer honestly, in which case please go <strong><a href=\"rulebending.html\">back</a></strong> and re-do the questions</li></ul>"
       }
     },
     "finally": "Thank you for participating in this anonymous survey. While, there are very few pathological fraudsters, there are also only a few of us who can really claim to be 100% percent honest.. But don’t feel too down about this. Being <strong>aware</strong> of our own capacity to cheat is in fact a strength. Awareness helps us to control our behaviour, <strong>and</strong> to spot fraud and corruption happening around us..."
@@ -138,6 +144,9 @@
   "it":
   {
     "start-question": "Ti consideri una persona onesta?",
+    "start_answer_yes" : "BUONO, PER QUANTO RISPOSTA SEGNALAMENTE LE SEGUENTI",
+    "start_answer_yes_blinking" : "QUESTIONI",
+    "start_answer_no" : "NON MOLTO PUNTO CHE HA IL TEST IN QUESTO, CI SONO? MA CI SONO DI CORSI DI LIVELLI DIVERSI DI STATO - PERCHE 'PERCHÉ NON PRENDE IL TEST ANCHE?",
     "prefix": "Hai mai...?",
     "per_page": 3,
     "total": 10,
@@ -198,7 +207,7 @@
       "-130":
       {
         "title": "Santo/a",
-        "description": "<strong>I casi sono due:</strong><ul><li>o sei da santificare e in tal caso siamo onorati della tua visita, perché occasioni simili sono estremamente rare... oppure alla fine avresti risposto di sì, se ti avessimo fatto ulterioni domande?<li></ul><div id=\"honesty-suggestions\"><label for=\"honesty-suggestions-textarea\">Facci sapere qui:</label><textarea id=\"honesty-suggestions-textarea\"></textarea><span class=\"button centered\" id=\"honesty-suggestions-button\">invia</span></div></li><li>...o forse non hai risposto in maniera del tutto onesta, nel qual caso ti invitiamo a ritornare al <strong><a href=\"rulebending.html\">questionario</a></strong> e ridare le risposte</li>"
+        "description": "<strong>I casi sono due:</strong><ul><li>o sei da santificare e in tal caso siamo onorati della tua visita, perché occasioni simili sono estremamente rare... oppure alla fine avresti risposto di sì, se ti avessimo fatto ulterioni domande?</li></ul><div id=\"honesty-suggestions\"><label for=\"honesty-suggestions-textarea\">Facci sapere qui:</label><textarea id=\"honesty-suggestions-textarea\"></textarea><span class=\"button centered\" id=\"honesty-suggestions-button\">invia</span></div><ul><li>...o forse non hai risposto in maniera del tutto onesta, nel qual caso ti invitiamo a ritornare al <strong><a href=\"rulebending.html\">questionario</a></strong> e ridare le risposte</li></ul>"
       }
     },
     "finally": "Grazie per aver scelto di partecipare a questo questionario anonimo. Se da una parte ci sono relativamente pochi truffatori di professione, è anche vero che molto pochi di noi possono davvero sostenere di essere onesti al 100%... Ma non abbatterti per questo. Essere <strong>consapevoli</strong> della propria capacità di imbrogliare è in realtà un vantaggio. Tale consapevolezza ci aiuta infatti a controllare il nostro comportamento <strong>e</strong> a scovare la frode che ci circonda..."

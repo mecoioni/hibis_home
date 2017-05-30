@@ -55,8 +55,8 @@ class HonestyGame
       ParagraphElement p = new ParagraphElement();
       SpanElement part1 = new SpanElement();
       SpanElement part2 = new SpanElement();
-      part1.innerHtml = "That's good, so please answer the following questions ";
-      part2.innerHtml = "honestly.";
+      part1.innerHtml = content["start_answer_yes"];
+      part2.innerHtml = "&nbsp" + content["start_answer_yes_blinking"];
       _toggleBlinkRecursive(part2);
       
       p.children.add(part1);
@@ -66,7 +66,7 @@ class HonestyGame
     querySelector("#start-no-button").onClick.first.then((_)
     {
       ParagraphElement p = new ParagraphElement();
-      p.innerHtml = "Not much point taking the test then, is there? But there are of course different levels of honesty - so why not take the test anyway?";
+      p.innerHtml = content["start_answer_no"];
       _parseStart(p);
     });
     
@@ -148,6 +148,7 @@ class HonestyGame
         TextAreaElement suggestionTextArea = querySelector("#honesty-suggestions-textarea");
         if (suggestionButton != null && suggestionTextArea != null)
         {
+          suggestionButton.style.padding = "0.3rem 0.5rem";
           suggestionButton.onClick.firstWhere((_)
           {
             if (suggestionTextArea.value.isEmpty) return false;
