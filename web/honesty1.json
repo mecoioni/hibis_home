@@ -47,25 +47,25 @@
       "100":
       {
         "title": "Aggressive Risk Taker",
-        "description": "You could be a bit of a risk taker who likes constant excitement and challenge in your life. You really don't mind bending the rules when you have the motivation, opportunity and can see that you are not going to get caught. It is probably difficult for your employer (or future employer) to control you.<br /><br /><strong>\"Typical\" job functions can for an aggressive risk taker include:</strong><ul><li>Chief Executive</li><li>Politician</li><li>Dictator</li><li>Career fraudster</li><li>Hacker</li></ul>"
+        "description": "You could be a bit of a risk taker who likes constant excitement and challenge in your life. You really don't mind bending the rules when you have the motivation, opportunity, and can see that you are not going to get caught. It is probably difficult for your employer (or future employer) to control you.<br /><br /><strong>\"Typical\" job functions can for an aggressive risk taker include:</strong><ul><li>Chief Executive</li><li>Politician</li><li>Dictator</li><li>Career fraudster</li><li>Hacker</li></ul>"
       },
       "50":
       {
         "title": "Risk Taker",
-        "description": "You like some excitement in your life and don’t mind bending a few rules when you have the motivation, opportunity and can see that you are not going to get caught.<br /><br /><strong>Typical job functions for a risk taker include:</strong><ul><li>Management Consultant</li><li>Auditor</li><li>IT Consultant</li><li>Policeman</li><li>Salesman</li><li>Financial Markets Trader</li></ul>"
+        "description": "You like some excitement in your life and don’t mind bending a few rules when you have the motivation, opportunity, and can see that you are not going to get caught.<br /><br /><strong> Typical job functions for a risk taker include:</strong><ul><li>Management Consultant</li><li>Auditor</li><li>IT Consultant</li><li>Policeman</li><li>Salesman</li><li>Financial Markets Trader</li></ul>"
       },
       "-50":
       {
         "title": "Average Risk Taker",
-        "description": "You do not like to bend the rules too much. However you can be persuaded to cheat a little when you have the motivation, opportunity and can see that you are not going to get caught. You are probably a nice person and a good, loyal friend.<br /><br /><strong>Typical job functions for average risk takers include:</strong><ul><li>Human Resources</li><li>Operations</li><li>Nurse</li><li>Teacher</li><li>Accounting</li><li>Waitor/Waitress</li><li>Corporate Responsibility</li><li>Compliance Officer</li></ul>"
+        "description": "You do not like to bend the rules too much. However, you can be persuaded to cheat a little when you have the motivation, opportunity, and can see that you are not going to get caught. You are probably a nice person and a good, loyal friend.<br /><br /><strong>Typical job functions for average risk takers include:</strong><ul><li>Human Resources</li><li>Operations</li><li>Nurse</li><li>Teacher</li><li>Accounting</li><li>Waitor/Waitress</li><li>Corporate Responsibility</li><li>Compliance Officer</li></ul>"
       },
       "-130":
       {
         "title": "Saint",
-        "description": "<strong>You are either:</strong><ul><li>a saint and we are awed to be visited by you as these occasions are rare...or would you have answered yes, if we asked some other questions?</li></ul><div id=\"honesty-suggestions\"><label for=\"honesty-suggestions-textarea\">Let us know:</label><textarea id=\"honesty-suggestions-textarea\"></textarea><span class=\"button centered\" id=\"honesty-suggestions-button\">send</span></div></li><li>...or you did not answer honestly, in which case please go <strong><a href=\"rulebending.html\">back</a></strong> and re-do the questions</li>"
+        "description": "<strong>You are either:</strong><ul><li>a saint and we are awed to be visited by you as these occasions are rare... or would you have answered yes, if we asked some other questions?</li></ul><div id=\"honesty-suggestions\"><label for=\"honesty-suggestions-textarea\">Let us know:</label><textarea id=\"honesty-suggestions-textarea\"></textarea><span class=\"button centered\" id=\"honesty-suggestions-button\">send</span></div></li><li>...or you did not answer honestly, in which case please go <strong><a href=\"rulebending.html\">back</a></strong> and re-do the questions</li>"
       }
     },
-    "finally": "Thank you for participating in this anonymous survey. While, there are very few pathological fraudsters, there are also only a few of us who can really claim to be 100% percent honest.. But don’t feel too down about this. Being <strong>aware</strong> of our own capacity to cheat is in fact a strength. Awareness helps us to control our behaviour, <strong>and</strong> to spot fraud and corruption happening around us..."
+    "finally": "Thank you for participating in this anonymous survey. While there are very few pathological fraudsters, there are also only a few of us who can really claim to be 100% percent honest.. But don’t feel too down about this. Being <strong>aware</strong> of our own capacity to cheat is in fact a strength. Awareness helps us to control our behaviour, <strong>and</strong> to spot fraud and corruption happening around us..."
   },
   "no":
   {
@@ -137,70 +137,70 @@
   },
   "it":
   {
-    "start-question": "Do you think you are a basically honest person?",
-    "prefix": "Have you ever...?",
+    "start-question": "Ti consideri una persona onesta?",
+    "prefix": "Hai mai...?",
     "per_page": 3,
     "total": 10,
     "questions":
     [
-      "used unlicensed software",
-      "illegally copied or downloaded music",
-      "illegally downloaded films",
-      "taken credit for your colleagues work",
-      "illegally obtained confidential information",
-      "claimed reimbursement for private expenses",
-      "paid a bribe",
-      "taken a bribe",
-      "taken more than your fair share of the proceeds of a sale",
-      "purchased pirate copy products from street vendors",
-      "taken items of office stationery or equipment to use at home",
-      "manipulated business partners to achieve your own ambitions",
-      "deliberately exceeded the speed limit",
-      "told a 'white lie' about your qualifications",
-      "forged a signature on an official document",
-      "claimed sick leave to extend your vacation",
-      "omitted income from your tax return",
-      "claimed tax deductions you were not entitled to",
-      "brought items through customs which you should have declared",
-      "exaggerated your travel expenses",
-      "worked illegally for cash",
-      "taken advantage of a business partner",
-      "hidden your wealth or income to qualify for subsidies",
-      "paid cash to a plumber, builder, tradesman or other contractor to avoid paying tax…",
-      "channeled company purchases or services through another company in which you or your family members have a personal interest",
-      "ordered unnecessarily expensive items to get more bonus points",
-      "knowingly inflated a private insurance claim",
-      "avoided paying the bus or train fare",
-      "taken and not declared a gift from a supplier or customer",
-      "claimed a benefit you know you really shouldn't have",
-      "cheated on a test",
-      "used company envelopes and/or stamps for private correspondence",
-      "used the company photocopy machine for private purposes",
-      "stolen anything"
+      "usato software senza licenza",
+      "copato o scaricato musica illegalmente",
+      "scaricato o visto film illegalmente",
+      "ottenuto meriti per lavoro svolto da altri",
+      "ottenuto illegalmente informazioni riservate",
+      "chiesto rimborsi per spese a titolo personale",
+      "pagato una tangente",
+      "accettato una tangente",
+      "preso più del dovuto dai ricavi di una vendita",
+      "acquistato copie pirata da venditori ambulanti",
+      "portato a casa la cancelleria dell'ufficio",
+      "manipolato soci in affari per ottenere vantaggi personali",
+      "superato apposta il limite di velocità",
+      "'omesso qualche dettaglio' sul tuo curriulum vitae",
+      "falsificato una firma su un documento ufficiale",
+      "inventato una malattia per allungarti le ferie",
+      "omesso beni dalla dichiarazione dei redditi",
+      "richiesto detrazioni fiscali senza averne diritto",
+      "evitato di dichiarare oggetti alla dogana, importandoli illegalmente",
+      "riportato spese di viaggio oltre al dovuto",
+      "accettato di lavorare in nero",
+      "approfittato indebitamente di un socio in affari",
+      "ritoccato al ribasso il tuo reddito per avere diritto a sussidi",
+      "pagato in contanti l'idraulico, un muratore, commercianti o altre maestranze per evadere il fisco…",
+      "acquistato beni o servizi per conto del tuo datore di lavoro attraverso un'altra ditta di proprietà tua o di un tuo familiare",
+      "ordinato oggetti eccessivamente costosi per conto della ditta per ottenere più punti bonus (a vantaggio personale)",
+      "ritoccato al rialzo una richiesta di rimborso a un'assicurazione",
+      "preso il treno o il bus senza biglietto",
+      "ricevuto un dono da un cliente o da un fornitore senza dichiararlo",
+      "rivendicato un beneficio cui non avresti avuto diritto",
+      "copiato a un esame",
+      "usato buste e/o francobolli dell'ufficio per la tua corrispondenza privata",
+      "usato la fotocopiatrice aziendale per fini privati",
+      "rubato qualcosa"
     ],
     "feedback":
     {
       "100":
       {
-        "title": "Aggressive Risk Taker",
-        "description": "You could be a bit of a risk taker who likes constant excitement and challenge in your life. You really don't mind bending the rules when you have the motivation, opportunity and can see that you are not going to get caught. It is probably difficult for your employer (or future employer) to control you.<br /><br /><strong>\"Typical\" job functions can for an aggressive risk taker include:</strong><ul><li>Chief Executive</li><li>Politician</li><li>Dictator</li><li>Career fraudster</li><li>Hacker</li></ul>"
+        "title": "Estremamente amante del rischio",
+        "description": "Probabilmente sei una persona con una spiccata preferenza per il rischio, ti piacciono le sfide e lo stato di agitazione costante che ne deriva. Non ti fai scrupoli a chiudere un occhio (o due) se ti si presenta l'occasione, hai la motivazione giusta, e hai la ragionevole certezza di non essere beccato/a. Di conseguenza, per il tuo datore di lavoro (presente o futuro) potrebbe essere difficile tenerti sotto controllo.<br /><br /> Un simile profilo psicologico si trova naturalmente a proprio agio in <strong> \"posizioni di potere\" </strong> quali:<ul><li>Amministratore delegato</li><li>Politico</li><li>Dittatore</li><li>Truffatore/trice seriale</li><li>Hacker</li></ul>"
       },
       "50":
       {
-        "title": "Risk Taker",
-        "description": "You like some excitement in your life and don’t mind bending a few rules when you have the motivation, opportunity and can see that you are not going to get caught.<br /><br /><strong>Typical job functions for a risk taker include:</strong><ul><li>Management Consultant</li><li>Auditor</li><li>IT Consultant</li><li>Policeman</li><li>Salesman</li><li>Financial Markets Trader</li></ul>"
+        "title": "Amante del rischio",
+        "description": "Apprezzi un certo livello di agitazione nella tua vita, e, di volta in volta, sei pronto/a a chiudere un occhio su alcune cose se ti si presentano l'occasione, la motivazione, e se pensi che riuscirai a farla franca. <br /><br /><strong>Ruoli tipici</strong> per un profilo simile:<ul><li>Consulente di gestione</li><li>Revisore dei conti</li><li>Consulente informatico/a</li><li>Poliziotto/a</li><li>Venditore/trice</li><li>Broker di prodotti finanziari</li></ul>"
       },
       "-50":
       {
-        "title": "Average Risk Taker",
-        "description": "You do not like to bend the rules too much. However you can be persuaded to cheat a little when you have the motivation, opportunity and can see that you are not going to get caught. You are probably a nice person and a good, loyal friend.<br /><br /><strong>Typical job functions for average risk takers include:</strong><ul><li>Human Resources</li><li>Operations</li><li>Nurse</li><li>Teacher</li><li>Accounting</li><li>Waitor/Waitress</li><li>Corporate Responsibility</li><li>Compliance Officer</li></ul>"
+        "title": "Mediamente disposto a rischiare",
+        "description": "Non ami troppo infrangere le regole. Ciò nonostante, ti si può persuadere a imbrogliare un pochino con la motivazione giusta, l'occasione, e la ragionevole certezza di non essere colto/a in flagrante. Probabilmente sei una persona gentile, di cui ci si può fidare. <br /><br /><strong>Ruoli tipici</strong> per un profilo simile:<ul><li>Addetto/a alle Risorse Umane</li><li>Gestione Operazioni</li><li>Infermiere/a</li><li>Insegnante</li><li>Ragioniere</li><li>Cameriere/a</li><li>Addetto/a alla responsabilità d'impresa</li><li>Addetto/a alla \"Compliance\"</li></ul>"
       },
       "-130":
       {
-        "title": "Saint",
-        "description": "<strong>You are either:</strong><ul><li>a saint and we are awed to be visited by you as these occasions are rare...or would you have answered yes, if we asked some other questions?</li></ul><div id=\"honesty-suggestions\"><label for=\"honesty-suggestions-textarea\">Let us know:</label><textarea id=\"honesty-suggestions-textarea\"></textarea><span class=\"button centered\" id=\"honesty-suggestions-button\">send</span></div></li><li>...or you did not answer honestly, in which case please go <strong><a href=\"rulebending.html\">back</a></strong> and re-do the questions</li>"
+        "title": "Santo/a",
+        "description": "<strong>I casi sono due:</strong><ul><li>o sei da santificare e in tal caso siamo onorati della tua visita, perché occasioni simili sono estremamente rare... oppure alla fine avresti risposto di sì, se ti avessimo fatto ulterioni domande?<li></ul><div id=\"honesty-suggestions\"><label for=\"honesty-suggestions-textarea\">Facci sapere qui:</label><textarea id=\"honesty-suggestions-textarea\"></textarea><span class=\"button centered\" id=\"honesty-suggestions-button\">invia</span></div></li><li>...o forse non hai risposto in maniera del tutto onesta, nel qual caso ti invitiamo a ritornare al <strong><a href=\"rulebending.html\">questionario</a></strong> e ridare le risposte</li>"
       }
     },
-    "finally": "Thank you for participating in this anonymous survey. While, there are very few pathological fraudsters, there are also only a few of us who can really claim to be 100% percent honest.. But don’t feel too down about this. Being <strong>aware</strong> of our own capacity to cheat is in fact a strength. Awareness helps us to control our behaviour, <strong>and</strong> to spot fraud and corruption happening around us..."
+    "finally": "Grazie per aver scelto di partecipare a questo questionario anonimo. Se da una parte ci sono relativamente pochi truffatori di professione, è anche vero che molto pochi di noi possono davvero sostenere di essere onesti al 100%... Ma non abbatterti per questo. Essere <strong>consapevoli</strong> della propria capacità di imbrogliare è in realtà un vantaggio. Tale consapevolezza ci aiuta infatti a controllare il nostro comportamento <strong>e</strong> a scovare la frode che ci circonda..."
   }
 }
