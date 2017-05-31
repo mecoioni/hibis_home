@@ -1,5 +1,6 @@
 import 'dart:html';
 import 'phrase.dart';
+import 'language_selector.dart';
 
 
 /// Preload images
@@ -34,7 +35,7 @@ class Page
           e.style.opacity = "1";
         });
 
-        _populatePhrases();
+        _initLanguage();
       });            
     });
   }
@@ -57,14 +58,19 @@ class Page
     nav.style.visibility = (nav.style.visibility == "visible") ? "hidden" : "visible";
   }
 
-  static void _populatePhrases()
+  static void _initLanguage()
   {
     if (Uri.base.queryParameters.containsKey("lang")) phrase.language = window.sessionStorage["lang"] = Uri.base.queryParameters["lang"];
-
     else if (window.sessionStorage.containsKey("lang"))
     {
       phrase.language = window.sessionStorage["lang"];
     }
+    else
+    {
+      phrase.language = "en";
+      window.sessionStorage["lang"] = "en";
+    }
+    new LanguageSelector(phrase);
 
     querySelectorAll(".lang-exp").forEach((Element e) => e.setInnerHtml(phrase.get(e.dataset["exp"]), validator: new TrustedNodeValidator()));
   }
