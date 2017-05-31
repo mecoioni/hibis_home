@@ -143,16 +143,16 @@
   },
   "it":
   {
-    "start-question": "Ti consideri una persona onesta?",
-    "start_answer_yes" : "BUONO, PER QUANTO RISPOSTA SEGNALAMENTE LE SEGUENTI",
-    "start_answer_yes_blinking" : "QUESTIONI",
-    "start_answer_no" : "NON MOLTO PUNTO CHE HA IL TEST IN QUESTO, CI SONO? MA CI SONO DI CORSI DI LIVELLI DIVERSI DI STATO - PERCHE 'PERCHÉ NON PRENDE IL TEST ANCHE?",
+    "start-question": "Ti consideri una persona fondamentalmente onesta?",
+    "start_answer_yes" : "Molto bene, allora per favore rispondi alle seguenti domande",
+    "start_answer_yes_blinking" : "Onestamente",
+    "start_answer_no" : "A questo punto, non ha molto senso fare il test, non credi? Però ci sono comunque diversi livelli di onestà, quindi perché non provare comunque?",
     "prefix": "Hai mai...?",
     "per_page": 3,
     "total": 10,
     "questions":
     [
-      "usato software senza licenza",
+      "usato un software senza licenza",
       "copato o scaricato musica illegalmente",
       "scaricato o visto film illegalmente",
       "ottenuto meriti per lavoro svolto da altri",
@@ -164,20 +164,20 @@
       "acquistato copie pirata da venditori ambulanti",
       "portato a casa la cancelleria dell'ufficio",
       "manipolato soci in affari per ottenere vantaggi personali",
-      "superato apposta il limite di velocità",
+      "superato deliberatamente il limite di velocità",
       "'omesso qualche dettaglio' sul tuo curriulum vitae",
       "falsificato una firma su un documento ufficiale",
       "inventato una malattia per allungarti le ferie",
       "omesso beni dalla dichiarazione dei redditi",
       "richiesto detrazioni fiscali senza averne diritto",
       "evitato di dichiarare oggetti alla dogana, importandoli illegalmente",
-      "riportato spese di viaggio oltre al dovuto",
+      "riportato spese di viaggio superiori al dovuto",
       "accettato di lavorare in nero",
       "approfittato indebitamente di un socio in affari",
       "ritoccato al ribasso il tuo reddito per avere diritto a sussidi",
       "pagato in contanti l'idraulico, un muratore, commercianti o altre maestranze per evadere il fisco…",
       "acquistato beni o servizi per conto del tuo datore di lavoro attraverso un'altra ditta di proprietà tua o di un tuo familiare",
-      "ordinato oggetti eccessivamente costosi per conto della ditta per ottenere più punti bonus (a vantaggio personale)",
+      "ordinato oggetti eccessivamente costosi per conto della ditta per ottenere più benefici (a vantaggio personale)",
       "ritoccato al rialzo una richiesta di rimborso a un'assicurazione",
       "preso il treno o il bus senza biglietto",
       "ricevuto un dono da un cliente o da un fornitore senza dichiararlo",
@@ -202,12 +202,12 @@
       "-50":
       {
         "title": "Mediamente disposto a rischiare",
-        "description": "Non ami troppo infrangere le regole. Ciò nonostante, ti si può persuadere a imbrogliare un pochino con la motivazione giusta, l'occasione, e la ragionevole certezza di non essere colto/a in flagrante. Probabilmente sei una persona gentile, di cui ci si può fidare. <br /><br /><strong>Ruoli tipici</strong> per un profilo simile:<ul><li>Addetto/a alle Risorse Umane</li><li>Gestione Operazioni</li><li>Infermiere/a</li><li>Insegnante</li><li>Ragioniere</li><li>Cameriere/a</li><li>Addetto/a alla responsabilità d'impresa</li><li>Addetto/a alla \"Compliance\"</li></ul>"
+        "description": "Non ami troppo infrangere le regole. Ciò nonostante, ti si può persuadere a imbrogliare un pochino con la motivazione giusta, l'occasione, e la ragionevole certezza di non essere colto/a in flagrante. Probabilmente sei una persona gentile, di cui ci si può fidare. <br /><br /><strong>Ruoli tipici</strong> per un profilo simile:<ul><li>Addetto/a alle Risorse Umane</li><li>Gestione Operazioni</li><li>Infermiere/a</li><li>Insegnante</li><li>Ragioniere</li><li>Cameriere/a</li><li>Dirigente incaricato/a della responsabilità sociale d'impresa e \"Compliance\"</li></ul>"
       },
       "-130":
       {
         "title": "Santo/a",
-        "description": "<strong>I casi sono due:</strong><ul><li>o sei da santificare e in tal caso siamo onorati della tua visita, perché occasioni simili sono estremamente rare... oppure alla fine avresti risposto di sì, se ti avessimo fatto ulterioni domande?</li></ul><div id=\"honesty-suggestions\"><label for=\"honesty-suggestions-textarea\">Facci sapere qui:</label><textarea id=\"honesty-suggestions-textarea\"></textarea><span class=\"button centered\" id=\"honesty-suggestions-button\">invia</span></div><ul><li>...o forse non hai risposto in maniera del tutto onesta, nel qual caso ti invitiamo a ritornare al <strong><a href=\"rulebending.html\">questionario</a></strong> e ridare le risposte</li></ul>"
+        "description": "<strong>I casi sono due:</strong><ul><li>o sei da santificare e in tal caso siamo onorati della tua visita, perché occasioni simili sono estremamente rare... oppure alla fine avresti risposto di sì a qualche cosa, se ti avessimo fatto ulterioni domande?</li></ul><div id=\"honesty-suggestions\"><label for=\"honesty-suggestions-textarea\">Facci sapere qui:</label><textarea id=\"honesty-suggestions-textarea\"></textarea><span class=\"button centered\" id=\"honesty-suggestions-button\">invia</span></div><ul><li>...o forse non hai risposto in maniera del tutto onesta, nel qual caso ti invitiamo a ritornare al <strong><a href=\"rulebending.html\">questionario</a></strong> e rispondere nuovamente</li></ul>"
       }
     },
     "finally": "Grazie per aver scelto di partecipare a questo questionario anonimo. Se da una parte ci sono relativamente pochi truffatori di professione, è anche vero che molto pochi di noi possono davvero sostenere di essere onesti al 100%... Ma non abbatterti per questo. Essere <strong>consapevoli</strong> della propria capacità di imbrogliare è in realtà un vantaggio. Tale consapevolezza ci aiuta infatti a controllare il nostro comportamento <strong>e</strong> a scovare la frode che ci circonda..."
