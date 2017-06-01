@@ -8,7 +8,7 @@ class LanguageSelector
     _selectedLanguage = _container.querySelector("#selected-language");
     _selectedLanguage.setInnerHtml(phrase.get("lang_${phrase.language}"));
     _optionsDropdown = _container.querySelector("#selected-language-options");
-    _options = _optionsDropdown.querySelectorAll(".language-option").toList(growable: false);
+    _options = querySelectorAll(".language-option").toList(growable: false);
 
     _selectedLanguage.onClick.listen((e)
       {
@@ -17,18 +17,18 @@ class LanguageSelector
       });
     document.onClick.listen((_) => _optionsDropdown.classes.add("hide"));
 
-    for (DivElement option in _options) option.onClick.listen(_setActiveLanguage);
+    for (Element option in _options) option.onClick.listen(_setActiveLanguage);
   }
 
   void _setActiveLanguage(MouseEvent e)
   {
-    window.sessionStorage["lang"] = (e.target as DivElement).dataset["value"];
+    window.sessionStorage["lang"] = (e.target as Element).dataset["value"];
     window.location.reload();
   }
 
   final DivElement _container = querySelector("#language-selector");
   DivElement _optionsDropdown;
-  List<DivElement> _options;
+  List<Element> _options;
   SpanElement _selectedLanguage;
 
 }

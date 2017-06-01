@@ -1,2 +1,36 @@
-.profile{padding-top:0.5rem;margin-top:1rem;margin-bottom:1rem;font-size:0.9em;border-bottom:1px solid lightgrey;min-height:21rem !important}.profile p{margin:0.2rem 0 0 0;line-height:105%;color:#878787;font-size:0.9em;letter-spacing:1px}.profile h5{letter-spacing:0.05em}.profile a{font-weight:600;letter-spacing:0.07em}.profile div.icon-container{width:1.7em;padding-right:0.7em;display:inline-block}.profile div.icon-container img{-webkit-transform:translateY(0.3em);-moz-transform:translateY(0.3em);-ms-transform:translateY(0.3em);-o-transform:translateY(0.3em);transform:translateY(0.3em);height:1.3em;margin:0 auto;display:block}.profile div.info{margin:1em 0}
+.profile {
+  padding-top: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.9em;
+  border-bottom: 1px solid lightgrey;
+  min-height: 21rem !important; }
+  .profile p {
+    margin: 0.2rem 0 0 0;
+    line-height: 105%;
+    color: #878787;
+    font-size: 0.9em;
+    letter-spacing: 1px; }
+  .profile h5 {
+    letter-spacing: 0.05em;
+    color: #1f3161; }
+  .profile a {
+    font-weight: 600;
+    letter-spacing: 0.07em; }
+  .profile div.icon-container {
+    width: 1.7em;
+    padding-right: 0.7em;
+    display: inline-block; }
+    .profile div.icon-container img {
+      -webkit-transform: translateY(0.3em);
+      -moz-transform: translateY(0.3em);
+      -ms-transform: translateY(0.3em);
+      -o-transform: translateY(0.3em);
+      transform: translateY(0.3em);
+      height: 1.3em;
+      margin: 0 auto;
+      display: block; }
+  .profile div.info {
+    margin: 1em 0; }
+
 /*# sourceMappingURL=who_we_are.css.map */

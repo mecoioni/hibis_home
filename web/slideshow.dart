@@ -8,7 +8,7 @@ class SlideShow
   {
     _imageList.forEach(_container.append);
     _container.style.position = "relative";
-    //_container.style.marginBottom = "2rem";
+    _container.style.marginBottom = "1rem";
     _container.style.backgroundColor = "white";
 
     for (int i = 0; i < _imageList.length; i++)
