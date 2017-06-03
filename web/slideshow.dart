@@ -18,7 +18,7 @@ class SlideShow
       img.className = "no-height";
       img.style.display = "block";
       img.style.position = "relative";
-      img.style.transition = "opacity 600ms ease";
+      img.style.transition = "opacity 100ms ease";
       img.style.width = "100%";
       img.style.zIndex = "1";
       _container.append(img);
@@ -42,7 +42,7 @@ class SlideShow
     _currentIndex = _rnd.nextInt(_imageList.length);
     _imageList[_currentIndex].classes.remove("no-height");
 
-    new Timer.periodic(const Duration(seconds:10), nextRandomImage);
+    new Timer.periodic(const Duration(seconds:20), nextRandomImage);
   }
 
   void nextRandomImage(Timer t)
