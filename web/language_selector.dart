@@ -22,8 +22,8 @@ class LanguageSelector
 
   void _setActiveLanguage(MouseEvent e)
   {
-    window.sessionStorage["lang"] = (e.target as Element).dataset["value"];
-    window.location.reload();
+    String lang = (e.target as Element).dataset["value"];
+    window.location.href = "https://$lang.hibis.com${Uri.base.path}";
   }
 
   final DivElement _container = querySelector("#language-selector");

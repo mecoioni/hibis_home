@@ -60,16 +60,8 @@ class Page
 
   static void _initLanguage()
   {
-    if (Uri.base.queryParameters.containsKey("lang")) phrase.language = window.sessionStorage["lang"] = Uri.base.queryParameters["lang"];
-    else if (window.sessionStorage.containsKey("lang"))
-    {
-      phrase.language = window.sessionStorage["lang"];
-    }
-    else
-    {
-      phrase.language = "en";
-      window.sessionStorage["lang"] = "en";
-    }
+    String host = Uri.base.host;
+    phrase.language = (host.indexOf(".") == 2) ? host.substring(0, 2) : "en";
     new LanguageSelector(phrase);
 
     querySelectorAll(".lang-exp").forEach((Element e) => e.setInnerHtml(phrase.get(e.dataset["exp"]), validator: new TrustedNodeValidator()));

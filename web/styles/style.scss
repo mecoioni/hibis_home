@@ -179,16 +179,17 @@ div#header-container
   {
     div#language-selector
     {
+      z-index:99;
       background: url('../gfx/arrow_down_icon.png') no-repeat;
-      -ms-background-position-x: 98%;
-      background-position-x: 98%;
+      -ms-background-position-x: 100%;
+      background-position-x: 100%;
       -ms-background-position-y: 5px;
       background-position-y: 5px;
-      padding-right: 1.7rem;
+      padding-right: 1.5rem;
+      margin-top: 2.5rem;
       border: 0;
       color: $blue3;
       width: 100%;
-      margin-top: 3.17rem;
       font-weight: bold;
       text-align: right;
       cursor: pointer;
@@ -196,8 +197,8 @@ div#header-container
 
       div#selected-language-options
       {
-        top: 1.5em;
-        right: 1.3rem;
+        top: 1.7em;
+        right: 0.9rem;
         width: 10rem;
         padding: 0;
         position: absolute;
@@ -223,6 +224,7 @@ div#header-container
       }
       font-size: 0.9em;
     }
+    /*
     input
     {
       margin-top: 0.3rem;
@@ -238,7 +240,7 @@ div#header-container
       color: $gray;
       outline-color: $orange2;
     }
-
+*/
     padding-top: 3.5rem;
 
     ul#nav-list
@@ -341,7 +343,7 @@ p#copyright
 
   font-weight: bold;
   padding: 0;
-  margin: 4.7rem 0 0 0;
+  margin: 1rem 0 0 0;
   list-style-type: none;
   text-align: right;
 
@@ -365,8 +367,8 @@ p#copyright
 
   li:last-child:after
   {
-    content: "|";
-    margin-right: 1rem;
+    content: "";
+    margin-right: 0;
   }
 }
 
@@ -458,7 +460,7 @@ p#copyright
 /* <=MEDIUM SCREEN */
 @media only screen and (max-width:1024px)
 {
-  #nav, #search-and-language
+  #nav, #language-selector-container
   {
     display: none;
   }

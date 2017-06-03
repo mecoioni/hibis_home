@@ -128,26 +128,44 @@ ul {
 div#header-container {
   background-color: #fff; }
   div#header-container div#header {
-    padding-top: 3.5rem; }
-    div#header-container div#header div#language-selector {
-      background: url("../gfx/arrow_down_icon.png") no-repeat;
+    /*
+    input
+    {
+      margin-top: 0.3rem;
+      padding: 0 20px 0 5px;
+      width: 100%;
+      background: url('../gfx/search_icon.png') no-repeat;
       -ms-background-position-x: 98%;
       background-position-x: 98%;
+      -ms-background-position-y: 3px;
+      background-position-y: 3px;
+      border: 1px solid #ccc;
+      height: 24px;
+      color: $gray;
+      outline-color: $orange2;
+    }
+*/
+    padding-top: 3.5rem; }
+    div#header-container div#header div#language-selector {
+      z-index: 99;
+      background: url("../gfx/arrow_down_icon.png") no-repeat;
+      -ms-background-position-x: 100%;
+      background-position-x: 100%;
       -ms-background-position-y: 5px;
       background-position-y: 5px;
-      padding-right: 1.7rem;
+      padding-right: 1.5rem;
+      margin-top: 2.5rem;
       border: 0;
       color: #1f3161;
       width: 100%;
-      margin-top: 3.17rem;
       font-weight: bold;
       text-align: right;
       cursor: pointer;
       position: relative;
       font-size: 0.9em; }
       div#header-container div#header div#language-selector div#selected-language-options {
-        top: 1.5em;
-        right: 1.3rem;
+        top: 1.7em;
+        right: 0.9rem;
         width: 10rem;
         padding: 0;
         position: absolute;
@@ -161,19 +179,6 @@ div#header-container {
         div#header-container div#header div#language-selector div#selected-language-options div.language-option:hover {
           background-color: #eab942;
           color: white; }
-    div#header-container div#header input {
-      margin-top: 0.3rem;
-      padding: 0 20px 0 5px;
-      width: 100%;
-      background: url("../gfx/search_icon.png") no-repeat;
-      -ms-background-position-x: 98%;
-      background-position-x: 98%;
-      -ms-background-position-y: 3px;
-      background-position-y: 3px;
-      border: 1px solid #ccc;
-      height: 24px;
-      color: #878787;
-      outline-color: #fcda64; }
     div#header-container div#header ul#nav-list li {
       font-size: 1.2rem;
       font-family: "PT Sans", sans-serif; }
@@ -232,7 +237,7 @@ p#copyright {
 #nav ul {
   font-weight: bold;
   padding: 0;
-  margin: 4.7rem 0 0 0;
+  margin: 1rem 0 0 0;
   list-style-type: none;
   text-align: right; }
   #nav ul .active {
@@ -249,8 +254,8 @@ p#copyright {
     content: "|";
     margin: 0 0 0 0.4em; }
   #nav ul li:last-child:after {
-    content: "|";
-    margin-right: 1rem; }
+    content: "";
+    margin-right: 0; }
 
 #nav-micro {
   display: none;
@@ -308,7 +313,7 @@ p#copyright {
 
 /* <=MEDIUM SCREEN */
 @media only screen and (max-width: 1024px) {
-  #nav, #search-and-language {
+  #nav, #language-selector-container {
     display: none; }
 
   #nav-micro {
