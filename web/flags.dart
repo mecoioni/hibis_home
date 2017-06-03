@@ -5,7 +5,6 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:html';
 import 'page.dart';
-import 'page.dart';
 import 'package:elements/elements.dart' show StopwatchElement;
 
 int flagNumber = 1;
@@ -30,10 +29,13 @@ class FlagsGame
     {
       Map<String, Map<String, dynamic>> data = JSON.decode(response);
 
+      /*
+
       String lang = "en";
       if (Uri.base.queryParameters.containsKey("lang")) lang = Uri.base.queryParameters["lang"];
       else if (window.sessionStorage.containsKey("lang")) lang = window.sessionStorage["lang"];
-      _properties = data[lang];
+      */
+      _properties = data[Page.phrase.language];
     }
     on FormatException catch(e,s)
     {

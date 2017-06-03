@@ -30,11 +30,8 @@ class HonestyGame
   
   void _load(String data)
   {
-    String lang = "en";
-    if (Uri.base.queryParameters.containsKey("lang")) lang = Uri.base.queryParameters["lang"];
-    else if (window.sessionStorage.containsKey("lang")) lang = window.sessionStorage["lang"];
-    Map<String, Map<String, dynamic>> dataMap = JSON.decode(data);
-    Map<String, dynamic> content = dataMap[lang];
+    Map<String, Map<String, dynamic>> dataTable = JSON.decode(data);
+    Map<String, dynamic> content = dataTable[Page.phrase.language];
 
     if (!content.containsKey("questions")) throw new StateError("Missing required key: questions");
     if (!(content["questions"] is List<String>)) throw new StateError("Invalid data: questions");
