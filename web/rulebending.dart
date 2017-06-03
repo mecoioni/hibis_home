@@ -31,7 +31,10 @@ class HonestyGame
   void _load(String data)
   {
     Map<String, Map<String, dynamic>> dataTable = JSON.decode(data);
-    Map<String, dynamic> content = dataTable[Page.phrase.language];
+
+    String host = Uri.base.host;
+    String lang = (host.indexOf(".") == 2) ? host.substring(0, 2) : "en";
+    Map<String, dynamic> content = dataTable[lang];
 
     if (!content.containsKey("questions")) throw new StateError("Missing required key: questions");
     if (!(content["questions"] is List<String>)) throw new StateError("Invalid data: questions");
@@ -100,10 +103,10 @@ class HonestyGame
       
       int red = _lerp(0, 200, currentBarWidth/evilBarContainerWidth).toInt();
       _evilBar.style.backgroundColor = "rgba($red,175,175,255)";
-    });    
-    
+    });
+
     _pullQuestions(_questionsPerPage);
-    Page.init("honesty");    
+    Page.init("honesty");
   }
   
   void _pullQuestions(int num_questions)

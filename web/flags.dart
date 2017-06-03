@@ -28,14 +28,9 @@ class FlagsGame
     try
     {
       Map<String, Map<String, dynamic>> data = JSON.decode(response);
-
-      /*
-
-      String lang = "en";
-      if (Uri.base.queryParameters.containsKey("lang")) lang = Uri.base.queryParameters["lang"];
-      else if (window.sessionStorage.containsKey("lang")) lang = window.sessionStorage["lang"];
-      */
-      _properties = data[Page.phrase.language];
+      String host = Uri.base.host;
+      String lang = (host.indexOf(".") == 2) ? host.substring(0, 2) : "en";
+      _properties = data[lang];
     }
     on FormatException catch(e,s)
     {
