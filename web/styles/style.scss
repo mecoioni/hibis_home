@@ -96,6 +96,21 @@ ul
   min-height: 50vh;
 }
 
+.color-blue1
+{
+  color: $blue1;
+}
+
+.color-blue2
+{
+  color: $blue2;
+}
+
+.color-blue3
+{
+  color: $blue3;
+}
+
 .strong
 {
   font-weight: bold;
@@ -282,12 +297,18 @@ div#footer
     {
       position: absolute;
       top: 0;
-      margin: 15% 7%;
+      margin: 25% 7%;
       width: 86%;
       color: $blue3;
       font-size: 2rem;
       font-weight: 900;
       line-height: 100%;
+    }
+
+    i
+    {
+      margin-top: 0.1em;
+      font-size: 1.2em;
     }
   }
 

@@ -64,6 +64,15 @@ ul {
 .columns.full-height {
   min-height: 50vh; }
 
+.color-blue1 {
+  color: #485960; }
+
+.color-blue2 {
+  color: #547e96; }
+
+.color-blue3 {
+  color: #1f3161; }
+
 .strong {
   font-weight: bold; }
 
@@ -204,12 +213,15 @@ div#footer {
     div#footer div.game-button p {
       position: absolute;
       top: 0;
-      margin: 15% 7%;
+      margin: 25% 7%;
       width: 86%;
       color: #1f3161;
       font-size: 2rem;
       font-weight: 900;
       line-height: 100%; }
+    div#footer div.game-button i {
+      margin-top: 0.1em;
+      font-size: 1.2em; }
   div#footer div.game-button:hover {
     -webkit-box-shadow: 0 2px 2px 2px #bbb;
     -moz-box-shadow: 0 2px 2px 2px #bbb;
