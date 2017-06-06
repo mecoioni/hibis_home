@@ -10,11 +10,11 @@ class LanguageSelector
     _optionsDropdown = _container.querySelector("#selected-language-options");
     _options = querySelectorAll(".language-option").toList(growable: false);
 
-    _selectedLanguage.onClick.listen((e)
-      {
-        e.stopPropagation();
-        _optionsDropdown.classes.remove("hide");
-      });
+    _container.onClick.listen((e)
+    {
+      e.stopPropagation();
+      _optionsDropdown.classes.remove("hide");
+    });
     document.onClick.listen((_) => _optionsDropdown.classes.add("hide"));
 
     for (Element option in _options) option.onClick.listen(_setActiveLanguage);

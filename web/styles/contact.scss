@@ -1,9 +1,15 @@
 @import 'colors';
 
-h4.button
+div.centered
 {
-  font-size: 0.9em;
+  margin: 0 auto;
+  width: 95%;
+}
+div.button
+{
   cursor: pointer;
+  display: inline-block;
+  width: 14%;
 }
 
 div#main
@@ -49,7 +55,7 @@ div.large-body
     }
     p
     {
-      font-size: 0.7em;
+      font-size: 0.8em;
       padding: 0.3em 0;
       margin: 0 0.5rem;
     }
@@ -112,4 +118,21 @@ div#map
     -moz-box-shadow: 0 2px 4px 2px #aaa;
     box-shadow: 0 4px 4px 2px #aaa;
   }
+}
+
+@media only screen and (max-width:1025px)
+{
+  div.contact-button
+  {
+    width: 33%;
+  }
+}
+
+@media only screen and (max-width:640px)
+{
+  div.contact-button
+  {
+    width: 32%;
+  }
+
 }
