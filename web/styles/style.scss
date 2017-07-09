@@ -111,6 +111,11 @@ ul
   color: $blue3;
 }
 
+.color-white
+{
+  color: white;
+}
+
 .strong
 {
   font-weight: bold;
@@ -129,8 +134,8 @@ ul
   color: #fff;
   background-color: $blue4;
   padding: 1em 1em;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
+  //border-left: 1px solid white;
+  //border-right: 1px solid white;
   text-align: center;
 
   -webkit-transition: background-color 100ms ease;
@@ -155,9 +160,19 @@ ul
   transition: opacity 1s;  -webkit-transition: opacity 1s; -moz-transition: opacity 1s; -o-transition: opacity 1s;
 }
 
+.margin-top-2
+{
+  margin-top: 2rem;
+}
+
 .margin-top-3
 {
   margin-top: 3rem;
+}
+
+.margin-bottom-3
+{
+  margin-bottom: 3rem;
 }
 
 .no-height
@@ -269,17 +284,52 @@ div#header-container
   }
 }
 
-div#main
+.arrow-up-icon
 {
-  z-index: 10;
-  min-height: 60vh;
-  padding-bottom: 1rem;
-  background-color: #fff;
+  width: 1.5rem;
+  cursor: pointer;
+  margin: 1rem 0 2rem 0;
 }
 
 div#footer
 {
   background-color: #eee;
+  div.lower-footer
+  {
+    background-color: #9e9a9b;
+    p
+    {
+      line-height: 7rem;
+      //margin-top: 1em;
+      font-size: 0.8em;
+      color: white;
+    }
+  }
+}
+
+img#logo
+{
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+  height: 75px;
+}
+
+p#copyright
+{
+  color:#999;
+  font-size:0.8em;
+}
+
+.game-buttons
+{
+  background-color: #eee;
+
+  .columns
+  {
+    //margin-top: 2rem;
+    //margin-bottom: 2rem;
+  }
+
   div.game-button
   {
     -webkit-box-shadow: 0 2px 2px 2px #ddd;
@@ -290,7 +340,7 @@ div#footer
     -moz-transition: all 600ms;
     -o-transition: all 600ms;
     transition: all 600ms;
-    
+
     position: relative;
     overflow: hidden;
     p
@@ -317,41 +367,6 @@ div#footer
     -webkit-box-shadow: 0 2px 2px 2px #bbb;
     -moz-box-shadow: 0 2px 2px 2px #bbb;
     box-shadow: 0 2px 2px 2px #bbb;
-  }
-
-  div.lower-footer
-  {
-    background-color: #9e9a9b;
-    p
-    {
-      margin-top: 1em;
-      font-size: 0.8em;
-      color: white;
-    }
-  }
-}
-
-img#logo
-{
-  margin-top: 2.5rem;
-  margin-bottom: 2rem;
-  height: 75px;
-}
-
-p#copyright
-{
-  color:#999;
-  font-size:0.8em;
-}
-
-#game-buttons
-{
-  //background-color: #eee;
-
-  .columns
-  {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
   }
 }
 

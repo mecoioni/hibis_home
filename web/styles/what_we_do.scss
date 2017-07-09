@@ -1,43 +1,43 @@
 @import 'colors';
 
-.collapse-toggle
+div#what-we-do
 {
-  cursor: pointer;
-  color: $gray-dark;
-  border-bottom: 1px solid $orange1;
-}
+  background-color: white;
+ //padding-bottom: 2rem;
 
-.collapse-toggle:after
-{
-  content: '+';
-  float: right;
-  color: $orange1;
-  font-size: 2em;
-  margin: -0.4em 0.1em 0 0;
-}
-.collapse-toggle.open:after
-{
-  margin: -0.4em 0.2em 0 0;
-  content: '-';
-}
+  .collapse-toggle
+  {
+    cursor: pointer;
+    color: $gray-dark;
+    border-bottom: 1px solid $orange1;
+  }
 
-.collapsible
-{
-  overflow: hidden;
-  max-height: 1000px;
-  -webkit-transition: max-height 300ms;
-  -moz-transition: max-height 300ms;
-  -o-transition: max-height 300ms;
-  transition: max-height 300ms;
-}
+  .collapse-toggle:after
+  {
+    content: '+';
+    float: right;
+    color: $orange1;
+    font-size: 2em;
+    margin: -0.4em 0.1em 0 0;
+  }
+  .collapse-toggle.open:after
+  {
+    margin: -0.4em 0.2em 0 0;
+    content: '-';
+  }
 
-/*
-.collapsible:last-child
-{
-  margin-bottom: 3rem;
-}
-*/
-.collapsible.collapsed
-{
-  max-height: 0;
+  .collapsible
+  {
+    overflow: hidden;
+    max-height: 1000px;
+    -webkit-transition: max-height 300ms;
+    -moz-transition: max-height 300ms;
+    -o-transition: max-height 300ms;
+    transition: max-height 300ms;
+  }
+
+  .collapsible.collapsed
+  {
+    max-height: 0;
+  }
 }

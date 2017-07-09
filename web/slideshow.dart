@@ -42,7 +42,7 @@ class SlideShow
     _currentIndex = _rnd.nextInt(_imageList.length);
     _imageList[_currentIndex].classes.remove("no-height");
 
-    new Timer.periodic(const Duration(seconds:20), nextRandomImage);
+    new Timer.periodic(const Duration(seconds:30), nextRandomImage);
   }
 
   void nextRandomImage(Timer t)

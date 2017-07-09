@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,eACA,CACE,gBAAgB,CCFV,OAAO,CDGb,iBACA,CACE,KAAK,CAAE,KAAK",
+"sources": ["our_history.scss","_colors.scss"],
+"names": [],
+"file": "our_history.css"
+}
