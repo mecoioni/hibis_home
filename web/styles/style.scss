@@ -191,12 +191,6 @@ ul
   text-decoration: underline;
 }
 
-.unresolved
-{
-  opacity: 0;
-  transition: opacity 0.2s ease; -webkit-transition: opacity 0.2s ease; -moz-transition: opacity 0.2s ease;
-}
-
 ::selection
 {
   background-color: #eee;
