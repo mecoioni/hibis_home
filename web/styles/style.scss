@@ -9,7 +9,6 @@
   font-style: normal;
 }
 
-
 p, li
 {
   color: $blue1;
@@ -42,6 +41,7 @@ html
 body
 {
   background-color: #9e9a9b;
+  padding-top: 9rem;
 }
 
 hr
@@ -61,12 +61,6 @@ a:hover
   color: $blue2;
 }
 
-/*
-strong
-{
-  color: #555;
-}
-*/
 ul
 {
   margin-left: 0;
@@ -134,8 +128,6 @@ ul
   color: #fff;
   background-color: $blue4;
   padding: 1em 1em;
-  //border-left: 1px solid white;
-  //border-right: 1px solid white;
   text-align: center;
 
   -webkit-transition: background-color 100ms ease;
@@ -146,7 +138,6 @@ ul
 
 .button:hover, .button.open
 {
-  //color: $blue2;
   background-color: $orange1;
 }
 
@@ -196,84 +187,69 @@ ul
   background-color: #eee;
 }
 
-div#header-container
+div#header
 {
   background-color: #fff;
-  div#header
+  z-index: 99;
+  width: 100%;
+  height: 9rem;
+
+  div#language-selector
   {
-    div#language-selector
+    z-index:99;
+    background: url('../gfx/arrow_down_icon.png') no-repeat;
+    -ms-background-position-x: 100%;
+    background-position-x: 100%;
+    -ms-background-position-y: 5px;
+    background-position-y: 5px;
+    padding-right: 1.5rem;
+    margin-top: 2.5rem;
+    border: 0;
+    color: $blue3;
+    width: 100%;
+    font-weight: bold;
+    text-align: right;
+    cursor: pointer;
+    position: relative;
+
+    div#selected-language-options
     {
-      z-index:99;
-      background: url('../gfx/arrow_down_icon.png') no-repeat;
-      -ms-background-position-x: 100%;
-      background-position-x: 100%;
-      -ms-background-position-y: 5px;
-      background-position-y: 5px;
-      padding-right: 1.5rem;
-      margin-top: 2.5rem;
-      border: 0;
-      color: $blue3;
-      width: 100%;
-      font-weight: bold;
+      top: 1.7em;
+      right: 0.9rem;
+      width: 10rem;
+      padding: 0;
+      position: absolute;
       text-align: right;
-      cursor: pointer;
-      position: relative;
+      background-color: white;
+      -webkit-box-shadow: 1px 1px 3px #ccc;
+      -moz-box-shadow: 1px 1px 3px #ccc;
+      box-shadow: 1px 1px 3px #ccc;
 
-      div#selected-language-options
+      div.language-option
       {
-        top: 1.7em;
-        right: 0.9rem;
-        width: 10rem;
-        padding: 0;
-        position: absolute;
-        text-align: right;
-        background-color: white;
-        -webkit-box-shadow: 1px 1px 3px #ccc;
-        -moz-box-shadow: 1px 1px 3px #ccc;
-        box-shadow: 1px 1px 3px #ccc;
-
-        div.language-option
-        {
-          padding: 0 0.5rem;
-        }
-        div.language-option:hover
-        {
-          background-color: $orange1;
-          color: white;
-        }
+        padding: 0 0.5rem;
       }
-      span#selected-language
+      div.language-option:hover
       {
-
+        background-color: $orange1;
+        color: white;
       }
-      font-size: 0.9em;
     }
-    /*
-    input
+    span#selected-language
     {
-      margin-top: 0.3rem;
-      padding: 0 20px 0 5px;
-      width: 100%;
-      background: url('../gfx/search_icon.png') no-repeat;
-      -ms-background-position-x: 98%;
-      background-position-x: 98%;
-      -ms-background-position-y: 3px;
-      background-position-y: 3px;
-      border: 1px solid #ccc;
-      height: 24px;
-      color: $gray;
-      outline-color: $orange2;
-    }
-*/
-    padding-top: 3.5rem;
 
-    ul#nav-list
+    }
+    font-size: 0.9em;
+  }
+
+  //padding-top: 3.5rem;
+
+  ul#nav-list
+  {
+    li
     {
-      li
-      {
-        font-size: 1.2rem;
-        font-family: "PT Sans", sans-serif;
-      }
+      font-size: 1.2rem;
+      font-family: "PT Sans", sans-serif;
     }
   }
 }
@@ -285,6 +261,22 @@ div#header-container
   margin: 1rem 0 2rem 0;
 }
 
+.scrolltop
+{
+  position:absolute;
+  top: 0;
+  box-shadow: none;
+}
+
+.scrollfollow
+{
+  position:fixed;
+  -webkit-box-shadow: 0 1px 5px #666;
+  -moz-box-shadow:  0 1px 5px #666;
+  box-shadow:  0 1px 5px #666;
+
+}
+
 div#footer
 {
   background-color: #eee;
@@ -294,7 +286,6 @@ div#footer
     p
     {
       line-height: 7rem;
-      //margin-top: 1em;
       font-size: 0.8em;
       color: white;
     }
@@ -318,22 +309,17 @@ p#copyright
 {
   background-color: #eee;
 
-  .columns
-  {
-    //margin-top: 2rem;
-    //margin-bottom: 2rem;
-  }
-
   div.game-button
   {
     -webkit-box-shadow: 0 2px 2px 2px #ddd;
     -moz-box-shadow: 0 2px 2px 2px #ddd;
     box-shadow: 0 2px 2px 2px #ddd;
-
     -webkit-transition: all 600ms;
     -moz-transition: all 600ms;
     -o-transition: all 600ms;
     transition: all 600ms;
+
+    margin: 0.5rem 0 0.5rem 0;
 
     position: relative;
     overflow: hidden;
@@ -490,6 +476,18 @@ p#copyright
 /* <=MEDIUM SCREEN */
 @media only screen and (max-width:1025px)
 {
+
+  .game-buttons
+  {
+    div.game-button
+    {
+      p
+      {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
   #nav, #language-selector-container
   {
     display: none;

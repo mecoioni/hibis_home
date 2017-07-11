@@ -1,4 +1,6 @@
+import 'dart:async' show Timer;
 import 'dart:html';
+import 'header.dart';
 import 'phrase.dart';
 import 'language_selector.dart';
 
@@ -10,11 +12,11 @@ class Page
 {  
   static void init(String id)
   {
-    DivElement header = querySelector("#header");
+    DivElement header = querySelector("#header-content");
     DivElement footer = querySelector("#footer");
 
     _importHtml(header, "inc/header.html", onDone:()
-    {      
+    {
       if (id != null && querySelector("#$id") != null) querySelector("#$id").classes.add("active");
 
       /// external links are not allowed in html import, update the academy top link here instead
@@ -22,20 +24,33 @@ class Page
       (querySelector("#academy_small") as AnchorElement).href = "http://fraudacademy.hibis.com";
 
       /// micro nav
-      querySelector("#hamburger").onClick.listen(_toggleMicroMenu);  
+      querySelector("#hamburger").onClick.listen(_toggleMicroMenu);
       querySelector("#micro-nav-list").children.forEach((LIElement li)
       {
         li.children.first.onClick.listen((_) => querySelector("#hamburger-menu").style.visibility = "hidden");
-      });                        
+      });
+
+      new Header();
+
       _importHtml(footer, "inc/footer.html", onDone:()
       {
-        List<Element> unresolved = querySelectorAll(".unresolved");        
+        List<Element> unresolved = querySelectorAll(".unresolved");
         unresolved.forEach((Element e)
         {
           e.style.opacity = "1";
         });
 
         _initLanguage();
+
+        if (window.location.hash.isNotEmpty)
+        {
+          Element scrollTarget = querySelector(window.location.hash);
+          if (scrollTarget != null)
+          {
+            new Timer(const Duration(milliseconds: 100), () => window.scrollTo(0, scrollTarget.offsetTop));
+          }
+
+        }
       });            
     });
   }
