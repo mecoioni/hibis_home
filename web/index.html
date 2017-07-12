@@ -16,12 +16,12 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="styles/foundation/css/foundation.min.css">
     <link rel="stylesheet" href="styles/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles/style.css?v=16">
-    <link rel="stylesheet" href="styles/index.css?v=16">
-    <link rel="stylesheet" href="styles/what_we_do.css?v=16">
-    <link rel="stylesheet" href="styles/who_we_are.css?v=16">
-    <link rel="stylesheet" href="styles/our_history.css?v=16">
-    <link rel="stylesheet" href="styles/contact.css?v=16">
+    <link rel="stylesheet" href="styles/style.css?v=17">
+    <link rel="stylesheet" href="styles/index.css?v=17">
+    <link rel="stylesheet" href="styles/what_we_do.css?v=17">
+    <link rel="stylesheet" href="styles/who_we_are.css?v=17">
+    <link rel="stylesheet" href="styles/our_history.css?v=17">
+    <link rel="stylesheet" href="styles/contact.css?v=17">
     <style>
         .unresolved
         {
@@ -257,8 +257,8 @@
                         </div>
                         <div class="large-8 medium-7 columns">
                             <h5>Fridtjof Klareng Dale</h5>
-                            <div><div class="icon-container"><img src="gfx/email.svg" alt="email" /></div><a href="mailto:fridtjof.klareng@hibis.com">fridtjof.klareng@hibis.com</a></div>
-                            <div><div class="icon-container"><img src="gfx/phone.svg" alt="phone" /></div><a href="tel:+47 xxx xx xxx">+47 xxx xx xxx</a></div>
+                            <div><div class="icon-container"><img src="gfx/email.svg" alt="email" /></div><a href="mailto:fridtjof.k.dale@hibis.com">fridtjof.k.dale@hibis.com</a></div>
+                            <div><div class="icon-container"><img src="gfx/phone.svg" alt="phone" /></div><a href="tel:+47 415 15 367">+47 415 15 367</a></div>
                         </div>
                     </div>
                     <div class="row"><div class="columns info"><p class="text-justify lang-exp" data-exp="profile_fridtjof"></p></div></div>
@@ -340,30 +340,31 @@
 <div id="contact-us">
     <div class="row">
         <div class="columns" style="z-index:2">
-            <h3 class="lang-exp orange-text margin-top-3" data-exp="contact"></h3>
+            <h3 class="lang-exp orange-text margin-top-2" data-exp="contact"></h3>
+        </div>
+        <div class="columns" style="z-index:2">
+            <div class="body large-body large-screen hide" id="large-body-container">
+                <div class="top">
+                    <h3 class="city-output"></h3>
+                    <h4 class="address-output"></h4>
+                </div>
+                <div class="bottom">
+                    <p class="contact-output"></p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="row full-width collapse">
-        <div class="columns large-screen" style="margin-top:-5rem;">
+        <div class="columns large-screen" style="margin-top:-4.7rem;">
             <div id="map">
                 <img src="gfx/map.png" alt="world map">
-                <div class="node" data-target="oslo" id="node-oslo" style="top: 36%; left: 50%;"></div>
-                <div class="node" data-target="stockholm" id="node-stockholm" style="top: 37%; left: 54%;"></div>
-                <div class="node" data-target="london" id="node-london" style="top: 51%; left: 44.5%;"></div>
-                <div class="node" data-target="gothenburg" id="node-gothenburg" style="top: 41.3%; left: 51.5%;"></div>
-                <div class="node" data-target="copenhagen" id="node-copenhagen" style="top: 44.5%; left: 51%;"></div>
-                <div class="node" data-target="helsinki" id="node-helsinki" style="top: 35%; left: 57%;"></div>
-                <div class="node" data-target="rome" id="node-rome" style="top: 71%; left: 52%;"></div>
-
-                <div class="body large-body large-screen hide" id="large-body-container">
-                    <div class="top">
-                        <h3 class="city-output"></h3>
-                        <h4 class="address-output"></h4>
-                    </div>
-                    <div class="bottom">
-                        <p class="contact-output"></p>
-                    </div>
-                </div>
+                <div class="node" data-target="oslo" id="node-oslo" style="top:27%; left:44.5%;"></div>
+                <div class="node" data-target="stockholm" id="node-stockholm" style="top:28%; left:50.5%;"></div>
+                <div class="node" data-target="london" id="node-london" style="top:50%; left:35.5%;"></div>
+                <div class="node" data-target="gothenburg" id="node-gothenburg" style="top:34%; left:46%;"></div>
+                <div class="node" data-target="copenhagen" id="node-copenhagen" style="top:39%; left:46%;"></div>
+                <div class="node" data-target="helsinki" id="node-helsinki" style="top:25%; left:55%;"></div>
+                <div class="node" data-target="rome" id="node-rome" style="top:80%; left:47%;"></div>
             </div>
         </div>
     </div>
@@ -380,6 +381,7 @@
             </div>
         </div>
     </div>
+
     <div class="row small-screen">
         <div class="columns">
             <div class="body small-body hide">
@@ -436,7 +438,7 @@
 <div class="full-width" id="footer"></div>
 
 
-<script type="application/dart" src="main.dart?v=16"></script>
+<script type="application/dart" src="main.dart?v=17"></script>
 <script data-pub-inline src="packages/browser/dart.js"></script>
 </body>
 </html>

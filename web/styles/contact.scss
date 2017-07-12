@@ -32,8 +32,9 @@ div#contact-us
   div.large-body
   {
     position: absolute;
-    top: 10rem;
-    right: 20%;
+    //top: 10rem;
+    //right: 20%;
+    left: 0;
     width: 15rem;
 
     div.top, div.bottom
@@ -129,7 +130,7 @@ div#contact-us
 
   div#button-container
   {
-    margin-top: -4.5rem;
+    margin-top: -4rem;
   }
 }
 
@@ -139,7 +140,7 @@ div#contact-us
   {
     div.large-body
     {
-      top: 2rem;
+      //top: 2rem;
     }
   }
 }
