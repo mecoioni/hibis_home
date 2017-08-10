@@ -2,8 +2,57 @@
 
 body
 {
-  background-color: white;
+  background-color: #eee;
+  color: #777;
 }
+
+h2, h3, h4, h5
+{
+  color: $blue4;
+  font-weight: 100;
+  text-transform: none;
+}
+
+p
+{
+  color: #777;
+}
+
+div#page-container
+{
+  background-color: white;
+  margin-top: 3rem;
+  padding: 0 2rem;
+}
+
+div#header
+{
+  img
+  {
+    margin: 2rem 0 0 0;
+    width: 90%;
+  }
+
+  #title
+  {
+    margin: 1rem 0 2rem 0;
+    background-color: $blue4;
+    color: white;
+    padding: 0.8rem;
+    font-weight: 100;
+    font-size: 2.2rem;
+  }
+}
+
+div#footer
+{
+  p
+  {
+    font-size: 0.7em;
+    color: #aaa;
+  }
+}
+
 
 div#flags-canvas
 {
@@ -25,6 +74,7 @@ p#flags-conclusion
   width: 440px;
   margin: 0 auto;
   text-align: center;
+  font-size: 0.8em;
 }
 
 div#flags-description-container
@@ -38,6 +88,7 @@ div#flags-description-container
 
   ul
   {
+    font-size: 0.9em;
     margin: 0;
 
     li
@@ -113,6 +164,17 @@ span.flag-number
   }
 }
 
+.invisible
+{
+  opacity: 0;
+  visibility: visible; /* foundation override */
+}
+
+.fade
+{
+  transition: opacity 1s;  -webkit-transition: opacity 1s; -moz-transition: opacity 1s; -o-transition: opacity 1s;
+}
+
 @media only screen and (max-width:519px)
 {
   div#flags-container
@@ -134,3 +196,4 @@ span.flag-number
     transform: scale(0.6,0.6); -webkit-transform: scale(0.6,0.6); -ms-transform: scale(0.6,0.6); transform-origin: 0 0; -webkit-transform-origin: 0 0; -ms-transform-origin: 0 0;
   }
 }
+
