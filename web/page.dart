@@ -49,7 +49,6 @@ class Page
           {
             new Timer(const Duration(milliseconds: 100), () => window.scrollTo(0, scrollTarget.offsetTop));
           }
-
         }
       });            
     });

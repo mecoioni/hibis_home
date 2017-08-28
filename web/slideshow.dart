@@ -71,8 +71,9 @@ class SlideShow
     new ImageElement(src: "gfx/slide_7.jpg"),
     new ImageElement(src: "gfx/slide_8.jpg"),
     new ImageElement(src: "gfx/slide_9.jpg"),
-    new ImageElement(src: "gfx/slide_10.jpg")
-
+    new ImageElement(src: "gfx/slide_10.jpg"),
+    new ImageElement(src: "gfx/slide_11.jpg"),
+    new ImageElement(src: "gfx/slide_12.jpg"),
   ];
 
   int _currentIndex;

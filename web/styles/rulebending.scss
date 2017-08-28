@@ -1,8 +1,56 @@
 @import 'colors';
 body
 {
-  background-color: white;
+  background-color: #eee;
 }
+
+h2, h3, h4, h5
+{
+  color: $blue4;
+  font-weight: 100;
+  text-transform: none;
+}
+
+p
+{
+  color: #777;
+}
+
+div#page-container
+{
+  background-color: white;
+  margin-top: 3rem;
+  padding: 0 2rem;
+}
+
+div#header
+{
+  img
+  {
+    margin: 2rem 0 0 0;
+    width: 90%;
+  }
+
+  #title
+  {
+    margin: 1rem 0 2rem 0;
+    background-color: $blue4;
+    color: white;
+    padding: 0.8rem;
+    font-weight: 100;
+    font-size: 2.2rem;
+  }
+}
+
+div#footer
+{
+  p
+  {
+    font-size: 0.7em;
+    color: #aaa;
+  }
+}
+
 #honesty-start-container
 {
   text-align: center;
@@ -141,7 +189,6 @@ body
 
 .question:nth-child(2) { text-align:right; }
 .question:nth-child(3) { text-align:center; }
-
 
 .feedback-box
 {
