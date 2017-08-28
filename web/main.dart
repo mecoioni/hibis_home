@@ -22,7 +22,6 @@ void main()
   querySelectorAll(".collapse-toggle").onClick.listen(toggleCollapsed);
   querySelectorAll(".arrow-up-icon").onClick.listen((_) => window.scrollTo(0, 0));
 
-
   cityButtons.onClick.listen(onButtonClick);
   cityNodes.onClick.listen(onButtonClick);
 
