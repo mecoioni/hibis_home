@@ -15,8 +15,19 @@ class Header
     _headerElement = querySelector("#header");
     _state = HeaderState.top;
 
+    _headerList = querySelectorAll(".section-title");
+    _headerTargets["what_we_do"] = querySelector("#what_we_do");
+    _headerTargets["who_we_are"] = querySelector("#who_we_are");
+    _headerTargets["our_history"] = querySelector("#our_history");
+    _headerTargets["contact_us"] = querySelector("#contact");
+
     window.document.onScroll.listen((_)
     {
+      _headerTargets.values.forEach((e) => e.classes.remove("active"));
+      Iterable<Element> passed = _headerList.where(scrollIsBelow);
+
+      if (passed.isNotEmpty) _headerTargets[passed.last.dataset["exp"]].classes.add("active");
+
       int deltaScroll = _prevScrollPos - window.scrollY;
 
       /// Scrolling down
@@ -60,10 +71,22 @@ class Header
       _prevScrollPos = window.scrollY;
     });
   }
+
+  bool scrollIsBelow(Element e)
+  {
+    num bodyTop = document.body.getBoundingClientRect().top;
+    num headerHeight = _headerElement.getBoundingClientRect().height;
+    num elemTop = e.getBoundingClientRect().top;
+    num offset = elemTop - bodyTop;
+
+    return (window.scrollY >= offset - headerHeight - 100);
+  }
+
   DivElement _headerElement;
   int _prevScrollPos;
   HeaderState _state;
-
   bool autoScrolling = false;
   num offset = 0;
 }
+ElementList<Element> _headerList;
+Map<String, Element> _headerTargets = new Map();
