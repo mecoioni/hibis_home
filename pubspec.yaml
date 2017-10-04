@@ -1,8 +1,8 @@
 name: hibis_home
-version: 0.0.1
+version: 0.1.0
 description: Hibis Homepage
 environment:
-  sdk: '>=1.0.0 <2.0.0'
+  sdk: '>=1.24.2 <2.0.0'
 dependencies:
   browser: any
   elements: 0.1.4
