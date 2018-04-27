@@ -25,7 +25,7 @@ class Page
 
       /// micro nav
       querySelector("#hamburger").onClick.listen(_toggleMicroMenu);
-      querySelector("#micro-nav-list").children.forEach((LIElement li)
+      querySelector("#micro-nav-list").children.forEach((Element li)
       {
         li.children.first.onClick.listen((_) => querySelector("#hamburger-menu").style.visibility = "hidden");
       });

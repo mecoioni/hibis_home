@@ -30,7 +30,7 @@ class HonestyGame
   
   void _load(String data)
   {
-    Map<String, Map<String, dynamic>> dataTable = JSON.decode(data);
+    Map<String, Map<String, dynamic>> dataTable = json.decode(data);
 
     String host = Uri.base.host;
     String lang = (host.indexOf(".") == 2) ? host.substring(0, 2) : "en";
