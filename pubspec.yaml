@@ -4,7 +4,7 @@ description: Hibis Homepage
 environment:
   sdk: '>=2.0.0-dev.50.0 <2.0.0'
 dependencies:  
-  elements: 0.1.4
+  elements: 1.0.0
 
 
 dev_dependencies: 
