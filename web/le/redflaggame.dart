@@ -27,7 +27,7 @@ class FlagsGame
   {
     try
     {
-      Map<String, Map<String, dynamic>> data = JSON.decode(response);
+      Map<String, Map<String, dynamic>> data = json.decode(response);
       String host = Uri.base.host;
       String lang = (host.indexOf(".") == 2) ? host.substring(0, 2) : "en";
 
